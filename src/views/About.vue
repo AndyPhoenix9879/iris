@@ -1,6 +1,7 @@
 <template>
+
   <div class="about">
-    <h1>This is an about page</h1>
+    
   </div>
 </template>
 
@@ -12,6 +13,7 @@ export default {
 
 <style scoped>
 .about {
+  padding: 10px;
   text-align: center;
 }
 </style>
