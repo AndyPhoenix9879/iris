@@ -20,11 +20,6 @@
 </template>
 
 <style lang="scss">
-html, body {
-  background-color: #F5F5F5;
-  height: 100%;
-}
-
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
