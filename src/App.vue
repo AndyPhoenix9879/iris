@@ -19,14 +19,12 @@
   </div>
 </template>
 
-<style> /* Global CSS */
+<style lang="scss">
 html, body {
-  background-color: #F2F6FC;
+  background-color: #F5F5F5;
   height: 100%;
 }
-</style>
 
-<style lang="scss" scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

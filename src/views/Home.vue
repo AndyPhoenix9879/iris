@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+  <div class="mainContainer">
+    
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
 
   </div>
@@ -19,6 +19,12 @@ export default {
 </script>
 
 <style scoped>
-
+.mainContainer {
+  margin: 20px 20% 20px 20%;
+  display: flex;
+  text-align: center;
+  width: auto;
+  background-color: white;
+}
 </style>
 
