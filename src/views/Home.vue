@@ -1,4 +1,5 @@
 <template>
+<div class="bg">
   <div class="mainContainer">
 
     <div class="Card">
@@ -10,6 +11,7 @@
     </div>
 
   </div>
+</div>
 </template>
 
 <script>
@@ -25,8 +27,13 @@ export default {
 </script>
 
 <style scoped>
+.bg {
+  width: auto;
+  height: auto;
+  background-color: black;
+}
 .mainContainer {
-  margin: 20px 20% 20px 20%;
+  padding: 20px 20% 20px 20%;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -34,14 +41,14 @@ export default {
 }
 .Card {
   padding: 10px;
-  flex: 2;
+  width: 450px;
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
 }
 .Card2 {
   padding: 10px;
-  flex: 1;
-  background-color: white;
+  width: 500px;
+  background-color: gray;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
   
 }
