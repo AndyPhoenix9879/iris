@@ -1,5 +1,6 @@
 <template>
 <div class="bg">
+
   <div class="mainContainer">
 
     <div class="Card">
@@ -11,6 +12,7 @@
     </div>
 
   </div>
+
 </div>
 </template>
 
@@ -30,7 +32,7 @@ export default {
 .bg {
   width: auto;
   height: auto;
-  background-color: black;
+  background-color: #F2F6FC;
 }
 .mainContainer {
   padding: 20px 20% 20px 20%;
@@ -41,14 +43,14 @@ export default {
 }
 .Card {
   padding: 10px;
-  width: 450px;
+  width: 400px;
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
 }
 .Card2 {
   padding: 10px;
-  width: 500px;
-  background-color: gray;
+  width: 560px;
+  background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
   
 }
