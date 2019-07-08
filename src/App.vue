@@ -32,9 +32,16 @@
 }
 .mainContainer {
   display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 35px 20% 20px 20%;
   text-align: center;
-  width: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -9999;
 }
 </style>
 <style lang="scss" scoped>
