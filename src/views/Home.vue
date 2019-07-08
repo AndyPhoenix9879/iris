@@ -34,16 +34,9 @@ export default {
 </script>
 
 <style scoped>
-.bg {
-  position: absolute;
-  z-index: -99999;
-  width: 100%;
-  height: 100%;
-  background-color: #F5F5F5;
-}
 .mainContainer {
   display: flex;
-  padding: 20px 20% 20px 20%;
+  padding: 80px 20% 20px 20%;
   text-align: center;
   width: auto;
 }

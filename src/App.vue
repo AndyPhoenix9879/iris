@@ -18,7 +18,16 @@
     <router-view/>
   </div>
 </template>
-
+<style>
+.bg {
+  position: absolute;
+  top: 0;
+  z-index: -99999;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+}
+</style>
 <style lang="scss" scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
