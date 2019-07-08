@@ -9,9 +9,9 @@
       <div class="navItem">
         <router-link to="/home">Home</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/about">About</router-link> <el-divider direction="vertical"></el-divider>
-        <router-link to="/asf">Resources</router-link> <el-divider direction="vertical"></el-divider>
-        <router-link to="/asfasf">Test</router-link> <el-divider direction="vertical"></el-divider>
-        <router-link to="/af">Test2</router-link> 
+        <router-link to="/asf">Profile</router-link> <el-divider direction="vertical"></el-divider>
+        <router-link to="/asfasf">Contact Me</router-link> <el-divider direction="vertical"></el-divider>
+        <router-link to="/af">Resources</router-link> 
       </div>
 
     </div>
