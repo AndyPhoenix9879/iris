@@ -4,12 +4,15 @@
   <div class="mainContainer">
 
     <div class="Card">
-      
+      <h1>Hey!</h1>
+      <p>Welcome to my webpage. Some brief introduction to myself: <br>~<br> My name is Lai Jian Shin, I'm a student in the Chinese University of Hong Kong
+        pursuing a degree in Computer Science and expected to graduate in the year 2022. I'm an international student, from Brunei Darussalam (it's an independent country
+        somewhere at the northern coast of Borneo Island). I have a passion for technology (mostly on mobile and processor), photography and software development. My experience
+        in programming language inclues C, VB.NET, Python and Javascript. <br>~<br>
+        Feel free to contact me if you wish, and thanks for visiting my webpage!
+      </p>
     </div>
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
-    <div class="Card2">
-
-    </div>
 
   </div>
 
@@ -42,17 +45,11 @@ export default {
   width: auto;
 }
 .Card {
-  padding: 10px;
-  width: 400px;
+  padding: 50px 100px 50px 100px;
+  width: 100%;
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
 }
-.Card2 {
-  padding: 10px;
-  width: 560px;
-  background-color: white;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
-  
-}
+
 </style>
 
