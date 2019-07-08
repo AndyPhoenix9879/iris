@@ -39,7 +39,7 @@ export default {
   z-index: -99999;
   width: 100%;
   height: 100%;
-  background-color: #F2F6FC;
+  background-color: #F5F5F5;
 }
 .mainContainer {
   display: flex;
@@ -48,6 +48,7 @@ export default {
   width: auto;
 }
 .Card {
+  border-radius: 20px;
   padding: 50px 100px 50px 100px;
   width: 100%;
   background-color: white;
