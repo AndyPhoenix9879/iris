@@ -15,6 +15,9 @@
       </div>
 
     </div>
+
+    <div class="bg">
+    </div>
     <router-view/>
   </div>
 </template>
@@ -26,6 +29,12 @@
   width: 100%;
   height: 100%;
   background-color: #F5F5F5;
+}
+.mainContainer {
+  display: flex;
+  padding: 35px 20% 20px 20%;
+  text-align: center;
+  width: auto;
 }
 </style>
 <style lang="scss" scoped>

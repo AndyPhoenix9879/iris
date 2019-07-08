@@ -1,6 +1,6 @@
 <template>
 
-  <div class="bg">
+  <div class="mainContainer">
     
   </div>
 </template>

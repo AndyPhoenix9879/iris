@@ -1,6 +1,4 @@
 <template>
-<div class="bg">
-
   <div class="mainContainer">
 
     <div class="Card">
@@ -17,8 +15,6 @@
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
 
   </div>
-
-</div>
 </template>
 
 <script>
@@ -34,20 +30,12 @@ export default {
 </script>
 
 <style scoped>
-.mainContainer {
-  display: flex;
-  padding: 80px 20% 20px 20%;
-  text-align: center;
-  width: auto;
-}
 .Card {
   border-radius: 20px;
   padding: 50px 100px 50px 100px;
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
-  vertical-align: middle;
 }
-
 </style>
 
