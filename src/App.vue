@@ -41,7 +41,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  z-index: -9999;
+  z-index: -999;
 }
 </style>
 <style lang="scss" scoped>
