@@ -2,16 +2,18 @@
   <div class="mainContainer">
     
     <div class="Card">
-      <h1>About...</h1>
+      <h1>About this website</h1>
     </div>
     <br>
     <div class="Card">
-      <p>Welcome once again! This webpage aims to be my playground in learning more on the VueJS framework as well as diving deeper into Web Development. 
-        I would also be showing resources (usually academic) I found on the web and sharing it here on this website. My CV will also be displayed and updated
-        on this website. 
-        <br><br>
-        There is nothing more to this website than a display of what I have learnt and decided to implement as my own website. I hope to also consolidate a uniform
-        design language across most of the projects I develop, and this website would be a display of that design language too.
+      <p>
+        
+        <el-divider></el-divider>
+        This website is the culmination of everything I have learnt in Vue.JS, web development and UI design. This website can be regarded as my playground project
+        where I play with whatever there is to play around with in Web Development. Other than that, I will use this as my platform to share stuffs I think is either helpful
+        or cool around the web as well as a CV profile tab just for the sake of it. Enjoy!
+        <el-divider></el-divider>
+        
       </p>
     </div>
 
