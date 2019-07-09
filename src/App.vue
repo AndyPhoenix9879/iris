@@ -43,6 +43,13 @@
   top: 0;
   z-index: -999;
 }
+.Card {
+  border-radius: 20px;
+  padding: 30px 100px 30px 100px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
+}
 </style>
 <style lang="scss" scoped>
 #app {
