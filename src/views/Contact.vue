@@ -7,9 +7,14 @@
             <h1>Contact details: </h1>
             <hr>
             <p>Tel: +852 69949398 <br>
-            Email: Lai9879m@gmail.com</p>
+            Email: <a target="_blank" href="mailto:Lai9879m@gmail.com">Lai9879m@gmail.com</a></p>
             <hr>
-            <button></button>
+            <div class="imgs">
+                <a target="_blank" href="https://www.linkedin.com/in/laijianshin9879/"><img src="../assets/Circle Color/Linkedin.png"></a>
+                <a target="_blank" href="https://github.com/AndyPhoenix9879"><img src="../assets/Circle Color/Github.png"></a>
+                <a target="_blank" href="https://www.facebook.com/andy.lai.9879"><img src="../assets/Circle Color/Facebook.png"></a>
+                <a target="_blank" href="https://www.instagram.com/lai9879/"><img src="../assets/Circle Color/Instagram.png"></a>
+            </div>
             <hr>
         </div>
     </div>
@@ -22,5 +27,8 @@ export default {
 </script>
 
 <style scoped>
-
+.imgs img{
+    height: 45px;
+    padding-right: 30px;
+}
 </style>
