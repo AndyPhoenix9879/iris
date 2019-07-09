@@ -30,6 +30,11 @@ export default new Router({
       path: '/profile',
       name: 'profile',
       component: () => import(/* webpackChunkName: "about" */ './views/Profile.vue')
+    },
+    {
+      path: '/resources',
+      name: 'resources',
+      component: () => import(/* webpackChunkName: "about" */ './views/Resource.vue')
     }
   ]
 })
