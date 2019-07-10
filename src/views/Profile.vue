@@ -13,7 +13,7 @@
                 alt="image">
             </div>
             <div class="cardContent">
-                afafas
+                <hr>
             </div>
         </div>
     </div>

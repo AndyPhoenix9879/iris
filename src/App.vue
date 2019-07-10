@@ -11,7 +11,7 @@
         <router-link to="/about">About</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/profile">Profile</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/contact">Contact Me</router-link> <el-divider direction="vertical"></el-divider>
-        <router-link to="/resources">Resources</router-link> 
+        <router-link to="/downloads">Downloads</router-link> 
       </div>
 
     </div>

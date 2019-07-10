@@ -32,9 +32,9 @@ export default new Router({
       component: () => import('./views/Profile.vue')
     },
     {
-      path: '/resources',
-      name: 'resources',
-      component: () => import('./views/Resource.vue')
+      path: '/downloads',
+      name: 'downloads',
+      component: () => import('./views/Downloads.vue')
     }
   ]
 })
