@@ -4,7 +4,13 @@
         style="width:100%; height:100%; position:fixed; z-index:-9999; top:0;">
 
         <div class="Card">
-
+            <div>
+                <img src="https://media.licdn.com/dms/image/C5116AQEE96Qz_NYcmg/profile-displaybackgroundimage-shrink_350_1400/0?e=1568246400&v=beta&t=2VhrvuWxeid3-Nvfvk7y6SXkrVjXGMml1Mg_ZeMSX84"
+                style="width:100%; border-radius:20px 20px 0 0; box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);">
+            </div>
+            <div class="cardContent">
+                afafas
+            </div>
         </div>
     </div>
 </template>
@@ -14,6 +20,11 @@ export default {
 }
 </script>
 <style scoped>
-
+.Card {
+    padding: 0;
+}
+.cardContent {
+    padding: 20px;
+}
 </style>
 
