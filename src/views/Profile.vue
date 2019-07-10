@@ -8,6 +8,10 @@
                 <img src="https://media.licdn.com/dms/image/C5116AQEE96Qz_NYcmg/profile-displaybackgroundimage-shrink_350_1400/0?e=1568246400&v=beta&t=2VhrvuWxeid3-Nvfvk7y6SXkrVjXGMml1Mg_ZeMSX84"
                 style="width:100%; border-radius:20px 20px 0 0; box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);">
             </div>
+            <div id="profilePic">
+                <img src="https://lh3.googleusercontent.com/KC2YBg-D6PDUkgx3qQqrlxWYYthSkpgOJgpqHIky_jj_8Y8Up-gMFMlluaCYoKemZ37VmUiNH6ZOGf0LBwtsaoTDrqYr820SjZMV1wb1KnIG8eGe5ZJYZkBbKJTnTR47N5R3XX36DxglZaOoyUoVHdad5EngvyqCzrAZN_QuzALqW3gYgtj8WJh8wnaJtH-08fFX9SJZjJg1UuBU2EAp5dxWOqyuJRlsxj40V64xJKkX_wpqMZB20mAfnmYgqe820Hrmfp3aFr3qaUm-m91QG_SZo-HlgKErTPONu2lQQzdU0B7qPvNoItBqmlm7rMf-fQdiwJYfYR_BleQac_BNAG6b-xwZn3a1N6ilE_s_xFJjzBGgNa3FjxgoVluizMtixvfkLcOZ0-LZJJFCqN5eiqAQC1TNwiCLTCuxas2WmSNd69YjZF8iP7RYs5l1W9qG6JRStXj2pRMfRPPK_jhIGvKQI--t-Cg4JKyl2svM5boGFyd2IxTav6bNdcT6_AZg6polBPHauGIO_5yIL3gLtyXCS8rRWUEfZxkBIeW5G7EHs_xErEDQxzC58sY_JtxP5qcIeVaPbW9qcsiUP3b5_0CL9kS5apgpZs6hV9YocWF8sFQLMiEwtV0aJ2EVHTdcvRW8GLPsrJFmDRi8Mo2eU4vfX9e-Bd7s3flu84WWZ7VWaMTxzbE6AVnT1tNFCPo1fQ5q7FcSkFEMZ60B1ik7HpEZ-w=w1964-h1878-no"
+                alt="image">
+            </div>
             <div class="cardContent">
                 afafas
             </div>
@@ -22,9 +26,23 @@ export default {
 <style scoped>
 .Card {
     padding: 0;
+    position: relative;
 }
 .cardContent {
     padding: 20px;
 }
+
+#profilePic > img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 50%;
+    width: 250px;
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
 </style>
 
