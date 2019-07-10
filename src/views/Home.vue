@@ -21,7 +21,7 @@
 export default {
   name: 'home',
   components: {
-    //add whatever component name you'll have here
+
   }
 }
 </script>
@@ -30,6 +30,5 @@ export default {
 .mainContainer {
   padding-top: 80px;
 }
-
 </style>
 

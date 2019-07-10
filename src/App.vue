@@ -7,7 +7,7 @@
       </div>
 
       <div class="navItem">
-        <router-link to="/home">Home</router-link> <el-divider direction="vertical"></el-divider>
+        <router-link to="/">Home</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/about">About</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/profile">Profile</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/contact">Contact Me</router-link> <el-divider direction="vertical"></el-divider>
@@ -21,6 +21,13 @@
     <router-view/>
   </div>
 </template>
+<script>
+
+export default {
+
+}
+</script>
+
 <style>
 .bg {
   position: absolute;
@@ -74,6 +81,7 @@
       color: #67C23A;
       transition: linear 0.2s;
     }
+    
   }
 }
 .navEmblem {
