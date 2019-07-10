@@ -12,14 +12,11 @@
         in programming language includes C, VB.NET, Python and Javascript. <br><br>
         Feel free to contact me if you wish, and thanks for visiting my webpage! </p> <el-divider></el-divider>
     </div>
-    <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
 
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
