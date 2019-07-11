@@ -75,7 +75,7 @@ export default {
   position: sticky;
   position:-webkit-sticky;
   display: flex;
-  min-width: 1300px;
+  min-width: 800px;
   a {
     text-decoration: none;
     font-weight: bold;
@@ -90,7 +90,7 @@ export default {
 .navEmblem {
   width: 100%;
   margin-left: 50px;
-  min-width: 150px;
+  min-width: 0px;
 }
 .navItem {
   text-align: right;
@@ -98,6 +98,6 @@ export default {
   a {
     padding: 0 15px 0 15px;
   }
-  min-width: 1000px;
+  min-width: 550px;
 }
 </style>
