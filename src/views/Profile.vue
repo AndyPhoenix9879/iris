@@ -55,7 +55,7 @@
                 <div id="content">
                     <br>•	Front-end developer; technologies and tools used include vueJS, <br>
                         jQuery, element-UI and bootstrap. <br>
-                        •	Involved in the development of the EOB (Electronic Occurrence Book) project under <br>
+                        •	Involved in the development of the EOB (Electronic Occurrence Book) <br>project under 
                         Motorola Solution’s CACCS4 system for the HKPF. <br>
                         •	Participated in the Agile Development cycle of the project development. <br>
                 </div><br>
@@ -76,9 +76,14 @@
                     <b>Languages:</b> Fluent in Mandarin and English. Limited proficiency in Malay. <br>
                     <b>Programming Languages:</b> C, VB.NET, VBA, Python, Javascript <br>
                     <b>Tools:</b> Photoshop, Sublime Text, Arduino, VSCode, Adobe Premiere <br>
-                </div><br>
+                </div><br><br>
             
-
+                <h5 style="font-size:25px;">Awards/Achievments</h5>
+                <div id="content2">
+                    •	Scholarships: Honours at Entrance, Admission Scholarship, FoE Scholarship <br>
+                    •	Borneo Bulletin’s Photography Competition 1st Prize Winner <br>
+                    •	Finalists in Brunei’s First ICT Hackathon (B-CODE) <br>
+                </div><br>
 
             </div>
         </div>
@@ -125,6 +130,9 @@ export default {
 }
 #content {
     padding: 0px 80px;
+}
+#content2 {
+    padding: 0 40px;
 }
 #profilePic > img {
     display: static;
