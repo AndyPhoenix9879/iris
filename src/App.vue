@@ -75,6 +75,7 @@ export default {
   position: sticky;
   position:-webkit-sticky;
   display: flex;
+  min-width: 1300px;
   a {
     text-decoration: none;
     font-weight: bold;
@@ -84,7 +85,6 @@ export default {
       color: #67C23A;
       transition: linear 0.2s;
     }
-    
   }
 }
 .navEmblem {
