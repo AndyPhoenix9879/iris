@@ -36,6 +36,7 @@ export default {
   width: 100%;
   height: 100%;
   background-color: #F5F5F5;
+  min-width: 1000px;
 }
 .mainContainer {
   display: flex;
@@ -49,6 +50,7 @@ export default {
   height: 100%;
   top: 0;
   z-index: -999;
+  min-width: 1000px;
 }
 .Card {
   border-radius: 20px;
@@ -56,6 +58,7 @@ export default {
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
+  min-width: 1000px;
 }
 </style>
 <style lang="scss" scoped>
@@ -87,6 +90,7 @@ export default {
 .navEmblem {
   width: 100%;
   margin-left: 50px;
+  min-width: 150px;
 }
 .navItem {
   text-align: right;
@@ -94,5 +98,6 @@ export default {
   a {
     padding: 0 15px 0 15px;
   }
+  min-width: 1000px;
 }
 </style>
