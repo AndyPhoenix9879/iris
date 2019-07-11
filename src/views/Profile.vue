@@ -18,12 +18,15 @@
             </div>
             <hr style="clear:both; margin: 0 30px;">
             <div class="cardContent">
+
                 <h1 style="font-size:35px;">Lai Jian Shin</h1>
                 <div id="title"> Chinese University of Hong Kong</div><div id="dateTime">Sept 2018 - July 2022</div>
                 <br>Bsc. Computer Science<br>
                 GPA: 3.617
                 <br><br>
+
                 <h2 style="font-size:25px;">Experience</h2>
+
                 <div id="title"><b>SkyMelon</b></div><div id="dateTime">Jan 2017 - July 2017</div>
                 <br>Kernel Developer
                 <div id="content">
@@ -56,6 +59,27 @@
                         Motorola Solution’s CACCS4 system for the HKPF. <br>
                         •	Participated in the Agile Development cycle of the project development. <br>
                 </div><br>
+
+                <h3 style="font-size:25px;">Organizations</h3>
+                <div id="title"><b>CUHK ERG Music Committee</b></div><div id="dateTime">Dec 2018 - Jan 2019</div>
+                <br>Videographer
+                <div id="content">
+                    <br>•	Assisted in live-streaming the event into the Faculty’s Facebook page <br>
+                </div><br>
+
+                <div id="title"><b>Hong Kong Institute of Engineers, Student Chapter, CUHK</b></div><div id="dateTime">Oct 2018 - Present</div>
+                <br>Member
+                <br><br>
+
+                <h4 style="font-size:25px;">Skills</h4>
+                <div id="title">
+                    <b>Languages:</b> Fluent in Mandarin and English. Limited proficiency in Malay. <br>
+                    <b>Programming Languages:</b> C, VB.NET, VBA, Python, Javascript <br>
+                    <b>Tools:</b> Photoshop, Sublime Text, Arduino, VSCode, Adobe Premiere <br>
+                </div><br>
+            
+
+
             </div>
         </div>
     </div>
