@@ -18,9 +18,51 @@
             </div>
             <hr style="clear:both; margin: 0 30px;">
             <div class="cardContent">
-                <h1 style="font-size:30px;">Lai Jian Shin</h1>
-                The Chinese University of Hong Kong<br>
-                Bsc. Computer Science 
+                <h1 style="font-size:35px;">Lai Jian Shin</h1>
+                <div id="title"> Chinese University of Hong Kong</div><div id="dateTime">Sept 2018 - July 2022</div>
+                <br>Bsc. Computer Science<br>
+                GPA: 3.617
+                <br><br>
+                <h2 style="font-size:25px;">Experience</h2>
+                <div id="title"><b>SkyMelon</b></div><div id="dateTime">Jan 2017 - July 2017</div>
+                <br>Kernel Developer<br>
+                <div id="content">
+                    <br>•	Developed and maintained an Android Kernel with approximately <br>
+                        4000 users.<br>
+                        •	Hands-on experience of using GitHub as a means of keeping track <br>
+                        of modification done to the kernel.<br>
+                        •	Collaborated with developers from other devices in the community <br>
+                        to implement features (porting) over to the kernel.<br>
+                        •	Successfully tuned the brightness configuration of the display; also <br>
+                        achieved first ever stable overclocking for the device.<br>
+                        •	Pushed kernel development activity for the device in the community.<br>
+                </div>
+                <div id="title"><b>SkyMelon</b></div><div id="dateTime">Jan 2017 - July 2017</div>
+                <br>Kernel Developer<br>
+                <div id="content">
+                    <br>•	Developed and maintained an Android Kernel with approximately <br>
+                        4000 users.<br>
+                        •	Hands-on experience of using GitHub as a means of keeping track <br>
+                        of modification done to the kernel.<br>
+                        •	Collaborated with developers from other devices in the community <br>
+                        to implement features (porting) over to the kernel.<br>
+                        •	Successfully tuned the brightness configuration of the display; also <br>
+                        achieved first ever stable overclocking for the device.<br>
+                        •	Pushed kernel development activity for the device in the community.<br>
+                </div>
+                <div id="title"><b>SkyMelon</b></div><div id="dateTime">Jan 2017 - July 2017</div>
+                <br>Kernel Developer<br>
+                <div id="content">
+                    <br>•	Developed and maintained an Android Kernel with approximately <br>
+                        4000 users.<br>
+                        •	Hands-on experience of using GitHub as a means of keeping track <br>
+                        of modification done to the kernel.<br>
+                        •	Collaborated with developers from other devices in the community <br>
+                        to implement features (porting) over to the kernel.<br>
+                        •	Successfully tuned the brightness configuration of the display; also <br>
+                        achieved first ever stable overclocking for the device.<br>
+                        •	Pushed kernel development activity for the device in the community.<br>
+                </div>
             </div>
         </div>
     </div>
@@ -31,7 +73,21 @@ export default {
 }
 </script>
 <style scoped>
+.mainContainer {
+  display: auto;
+  position: relative;
+  align-items: auto;
+  justify-content: auto;
+  text-align: center;
+  padding: 20px 20% 20px 20%;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -999;
+}
 .Card {
+
     padding: 0;
     position: relative;
 }
@@ -44,6 +100,15 @@ export default {
     padding: 20px 40px;
     text-align: left;
     clear: both;
+}
+#dateTime {
+    float: right;
+}
+#title, #dateTime {
+    display: inline-block;
+}
+#content {
+    padding: 10px 80px;
 }
 #profilePic > img {
     border-style: solid;
