@@ -25,7 +25,7 @@
                 <br><br>
                 <h2 style="font-size:25px;">Experience</h2>
                 <div id="title"><b>SkyMelon</b></div><div id="dateTime">Jan 2017 - July 2017</div>
-                <br>Kernel Developer<br>
+                <br>Kernel Developer
                 <div id="content">
                     <br>•	Developed and maintained an Android Kernel with approximately <br>
                         4000 users.<br>
@@ -36,33 +36,26 @@
                         •	Successfully tuned the brightness configuration of the display; also <br>
                         achieved first ever stable overclocking for the device.<br>
                         •	Pushed kernel development activity for the device in the community.<br>
-                </div>
-                <div id="title"><b>SkyMelon</b></div><div id="dateTime">Jan 2017 - July 2017</div>
-                <br>Kernel Developer<br>
+                </div><br>
+
+                <div id="title"><b>Vicom Enterprise</b></div><div id="dateTime">April 2018 - July 2018</div>
+                <br>Salesman
                 <div id="content">
-                    <br>•	Developed and maintained an Android Kernel with approximately <br>
-                        4000 users.<br>
-                        •	Hands-on experience of using GitHub as a means of keeping track <br>
-                        of modification done to the kernel.<br>
-                        •	Collaborated with developers from other devices in the community <br>
-                        to implement features (porting) over to the kernel.<br>
-                        •	Successfully tuned the brightness configuration of the display; also <br>
-                        achieved first ever stable overclocking for the device.<br>
-                        •	Pushed kernel development activity for the device in the community.<br>
-                </div>
-                <div id="title"><b>SkyMelon</b></div><div id="dateTime">Jan 2017 - July 2017</div>
-                <br>Kernel Developer<br>
+                    <br>•	Served and handled customers in one of the country’s largest retailer <br>
+                        for Oppo and Vivo handsets. <br>
+                        •	Understood certain marketing techniques to sell the product at hand. <br>
+                        •	Learnt to put customer first to understand their needs. <br>
+                </div><br>
+
+                <div id="title"><b>Motorola Solutions</b></div><div id="dateTime">June 2019 - Aug 2019</div>
+                <br>Engineering Intern<br>
                 <div id="content">
-                    <br>•	Developed and maintained an Android Kernel with approximately <br>
-                        4000 users.<br>
-                        •	Hands-on experience of using GitHub as a means of keeping track <br>
-                        of modification done to the kernel.<br>
-                        •	Collaborated with developers from other devices in the community <br>
-                        to implement features (porting) over to the kernel.<br>
-                        •	Successfully tuned the brightness configuration of the display; also <br>
-                        achieved first ever stable overclocking for the device.<br>
-                        •	Pushed kernel development activity for the device in the community.<br>
-                </div>
+                    <br>•	Front-end developer; technologies and tools used include vueJS, <br>
+                        jQuery, element-UI and bootstrap. <br>
+                        •	Involved in the development of the EOB (Electronic Occurrence Book) project under <br>
+                        Motorola Solution’s CACCS4 system for the HKPF. <br>
+                        •	Participated in the Agile Development cycle of the project development. <br>
+                </div><br>
             </div>
         </div>
     </div>
@@ -107,7 +100,7 @@ export default {
     display: inline-block;
 }
 #content {
-    padding: 10px 80px;
+    padding: 0px 80px;
 }
 #profilePic > img {
     display: static;
