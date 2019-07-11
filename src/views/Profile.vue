@@ -84,7 +84,7 @@
                     •	Borneo Bulletin’s Photography Competition 1st Prize Winner <br>
                     •	Finalists in Brunei’s First ICT Hackathon (B-CODE) <br>
                 </div><br>
-
+                <hr>
             </div>
         </div>
     </div>
