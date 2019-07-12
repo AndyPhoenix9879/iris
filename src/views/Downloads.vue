@@ -4,13 +4,34 @@
         style="width:100%; height:100%; position:fixed; z-index:-9999; top:0; min-width: 1000px;">
         
         <div class="Card">
-
+            <button @click="downloadStuff" id="lol">Download</button>
         </div>
     </div>
 </template>
 <script>
+import { storage, db } from '../main.js'
+
 export default {
-    
+    data() {
+        return {
+            someStuff: {}
+        };
+    },
+    methods: {
+        downloadStuff() {
+            var theStuff = storage.refFromURL('https://firebasestorage.googleapis.com/v0/b/project-1-f0278.appspot.com/o/lol%2FCV.docx?alt=media&token=056b1bc9-f71b-45ac-ad2f-f4845d9a3c69');
+            // Get the download URL
+            var theURL = "";
+            theStuff.getDownloadURL().then(function(url) {
+                theURL = url;
+                console.log(theURL);
+                document.querySelector("#lol").innerHTML = theURL;
+            }).catch(function(error) {
+                console.log(error);
+            });
+
+        }
+    }
 }
 </script>
 <style scoped>
