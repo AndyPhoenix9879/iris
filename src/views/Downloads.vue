@@ -4,7 +4,7 @@
         style="width:100%; height:100%; position:fixed; z-index:-9999; top:0; min-width: 1000px;">
         
         <div class="Card">
-            <button @click="downloadStuff" id="lol">Download</button>
+            <button @click="downloadStuff"><a href="" id="lol">Download</a></button>
         </div>
     </div>
 </template>
@@ -25,7 +25,7 @@ export default {
             theStuff.getDownloadURL().then(function(url) {
                 theURL = url;
                 console.log(theURL);
-                document.querySelector("#lol").innerHTML = theURL;
+                document.getElementById('lol').href = theURL;
             }).catch(function(error) {
                 console.log(error);
             });
