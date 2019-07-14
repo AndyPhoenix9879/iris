@@ -18,7 +18,7 @@ export default {
         };
     },
     methods: {
-        downloadStuff() {
+        /*downloadStuff() {
             var theStuff = storage.refFromURL('https://firebasestorage.googleapis.com/v0/b/project-1-f0278.appspot.com/o/lol%2FCV.docx?alt=media&token=056b1bc9-f71b-45ac-ad2f-f4845d9a3c69');
             // Get the download URL
             var theURL = "";
@@ -29,8 +29,7 @@ export default {
             }).catch(function(error) {
                 console.log(error);
             });
-
-        }
+        }*/
     }
 }
 </script>
