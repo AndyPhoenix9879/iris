@@ -15,8 +15,6 @@
 
     </div>
 
-    <div class="bg">
-    </div>
     <router-view/>
   </div>
 </template>
@@ -28,23 +26,15 @@ export default {
 </script>
 
 <style>
-.bg {
-  position: absolute;
-  top: 0;
-  z-index: -99999;
-  width: 100%;
-  height: 100%;
-  background-color: #F5F5F5;
-  min-width: 1000px;
-}
+
 .mainContainer {
   display: flex;
+  flex-direction: column;
   position: absolute;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 35px 20% 20px 20%;
-  text-align: center;
+  padding: 0 20% 20px 20%;
   width: 100%;
   height: 100%;
   top: 0;
@@ -53,6 +43,7 @@ export default {
 }
 .Card {
   border-radius: 20px;
+  margin-top: 20px;
   padding: 30px 100px 30px 100px;
   width: 100%;
   background-color: white;
