@@ -22,11 +22,6 @@ export default new Router({
       component: () => import('./views/About.vue')
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('./views/Contact.vue')
-    },
-    {
       path: '/profile',
       name: 'profile',
       component: () => import('./views/Profile.vue')

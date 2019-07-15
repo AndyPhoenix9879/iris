@@ -10,7 +10,6 @@
         <router-link to="/">Home</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/about">About</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/profile">Profile</router-link> <el-divider direction="vertical"></el-divider>
-        <router-link to="/contact">Contact Me</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/downloads">Downloads</router-link> 
       </div>
 
@@ -59,6 +58,18 @@ export default {
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
   min-width: 1000px;
+}
+.footer {
+  background-color: white;
+  padding: 30px 20% 30px 20%;
+  box-shadow: 0px -6px 6px -2px rgba(0,0,0,0.10);
+  font-size: 14px;
+  color: #606266;
+}
+.footer img {
+    height: 26px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 </style>
 <style lang="scss" scoped>
