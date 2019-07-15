@@ -89,6 +89,7 @@
             </div>
         </div>
     </div>
+    
     <div class="footer">
         
             <a target="_blank" href="https://www.linkedin.com/in/laijianshin9879/"><img src="../assets/Circle Color/Linkedin.png"></a> <el-divider direction="vertical"></el-divider>
