@@ -29,7 +29,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 export const storage = firebase.storage();
-export const db = firebase.firestore();
+export const db = firebase.database();
 
 Vue.config.productionTip = false
 
