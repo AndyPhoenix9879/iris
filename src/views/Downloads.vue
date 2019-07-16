@@ -5,7 +5,7 @@
         <div class="tray">
             <div class="Card" v-for="(value,index) in someStuff" v-bind:key="value.index">
                 <div class="CardContent">
-                    {{index+1}}. {{value.name}}
+                    <a :href=value.url>{{index+1}}. {{value.name}}</a>
                 </div>
                 <el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>
             </div>
@@ -34,19 +34,27 @@ export default {
             })
         }
     },
-    created() {
-        db.collection('Names').onSnapshot(res => {
-            const gotChange = res.docChanges();
-            gotChange.forEach(change => {
+    created() { //when webpage loads
+        db.collection('Names').onSnapshot(res => { //snapshot is just a preview or something of the stuff inside the collection
+            const gotChange = res.docChanges(); //when something changes
+            gotChange.forEach(change => { //for each of the changes (with the variable or something as change)
                 if (change.type === 'added'){
                     this.someStuff.push({
                         ...change.doc.data(),
-                        id: change.doc.id
+                        id: change.doc.id //get the id of the document of the collection and put it inside someStuff
                     })
                 } else if (change.type === 'removed'){
                     for (var i = 0; i < this.someStuff.length; i++) {
-                        if (this.someStuff[i].name === change.doc.data().name) {
+                        if (this.someStuff[i].name === change.doc.data().name) { //I am super proud of this hack hahahahaha
                             this.someStuff.splice(i, 1);
+                            break;
+                        }
+                    }
+                } else if (change.type === 'modified'){
+                    for (var i = 0; i < this.someStuff.length; i++) {
+                        if (this.someStuff[i].id === change.doc.id) { 
+                            //console.log("Changing", this.someStuff[i].name, "to", change.doc.data().name);
+                            this.someStuff[i].name = change.doc.data().name;
                             break;
                         }
                     }
@@ -68,14 +76,16 @@ export default {
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.35);
 }
 #min {
+    outline: none;
     font-size: 5px;
     padding: 5px;
 }
 .tray {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
     margin-top: 80px;
+    margin-bottom: 80px;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -83,7 +93,11 @@ export default {
     flex-wrap: wrap;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    min-width: 600px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .Card {
@@ -91,7 +105,9 @@ export default {
     min-width: 50px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 260px;
+    margin-bottom: 0px;
+    padding: 20px;
+    width: 300px;
     height: 130px;
     box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
     transition: linear 0.1s;
@@ -101,6 +117,16 @@ export default {
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
     transition: linear 0.15s;
 }
- 
+.Card:active {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    transition: linear 0.08s;
+}
+.CardContent a {
+    text-decoration: none;
+    color: inherit;
+}
+.CardContent a:hover {
+    color: gray;
+}
 </style>
 
