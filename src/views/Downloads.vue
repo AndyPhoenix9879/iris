@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="mainContainer">
+    <div class="mainContainer" style="position:relative">
         <img src="https://lh3.googleusercontent.com/PPLEBPbQjUrMRleHOiDUnuvfLK_6XRKeUbMohSMGpk-NYaZnxvSUTM8awSJFmqvzt9gAZwt0xSE1XkqEzYrH9ZG3gyWMIbYpPCXP_Xx_BxMoPGWPK_CmTSSvYPPeynB99jf8W9RT2_yXkKRN55T_F_9BAGyadi42q4zS5fRmLUJyU9g_pRLGXaqr32B3qETItxLynw7LxafPB2sV6w4fG4AA61R2pGFALVuTyk4cjTTEDMFQw4HM-edtnGW7FzDmeaUU0MOzAMSnJbPDR_-JJfALKcLbzDw_59yCIYNpsQIeMAqXbuVMv8nmjd7oITono7_3_ijOZa9R3D_W2UOE2jviopBncNvv0xBlThng2Ki9yfAfHOc2FcsKSiB0HhMJA1QnFdznxyB3Wk8wXO52OkY5ABpofmP4Ka1AfDcGXfUQjkirkUDWu0QsFfUCwN3o5IvBPdQ4AD0Q6N0MmPyoZpsdVcoBjpRu7rRnPyo1WG0ldhdsHXGe6bzClggVpj_SSJpT1PdAUhRCBONmPUSiZKPl2HWF6Fuq_hbJXMyV9-jenxJ7CeH-7IcTAMxeTJxEYvaOB9OLBQUfMcRt6CdRAGUKqXFpepro6U0o_DyvaeeyHI_c--yROCaOAnjG2fUE_iaVj8StPPIvDQxM7xNJApFWuaOoxCYh=w3166-h1780-no"
         style="width:100%; height:100%; position:fixed; z-index:-9999; top:0; min-width: 1000px;">
         <div class="tray">
@@ -41,7 +41,7 @@ export default {
         };
     },
     methods: {
-        /*addList() {
+        /*addList() { //Adding something into the database
             db.collection('Names').add({name:"tempDATA"}).then(() => {
                 var name = "tempData";
                 console.log("Added");
@@ -52,7 +52,7 @@ export default {
                 });
             })
         },*/
-        /*remove(index) {
+        /*remove(index) { //Removing something from the database 
             db.collection('Names').doc(this.someStuff[index].id).delete().then(() =>{
                 console.log("Deleted");
                 this.$notify({
@@ -63,7 +63,7 @@ export default {
             })
         }*/
     },
-    created() { //when webpage loads
+    created() { //when webpage loads, not under method btw
         db.collection('Names').onSnapshot(res => { //snapshot is just a preview or something of the stuff inside the collection
             const gotChange = res.docChanges(); //when something changes
             gotChange.forEach(change => { //for each of the changes (with the variable or something as change)
@@ -111,9 +111,6 @@ export default {
     font-size: 5px;
     padding: 5px;
     float: right;
-}
-.mainContainer {
-    position: relative;
 }
 .tray {
     display: flex;
@@ -185,7 +182,7 @@ export default {
     border-radius: 0px 0px 20px 20px;
 }
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 </style>
