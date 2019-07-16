@@ -13,7 +13,8 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import locale from 'element-ui/lib/locale/lang/en'
 
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/firestore'
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -21,15 +22,14 @@ var firebaseConfig = {
   authDomain: "project-1-f0278.firebaseapp.com",
   databaseURL: "https://project-1-f0278.firebaseio.com",
   projectId: "project-1-f0278",
-  storageBucket: "",
+  storageBucket: "project-1-f0278.appspot.com",
   messagingSenderId: "89255024735",
   appId: "1:89255024735:web:303284d336dc53ff"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-export const storage = firebase.storage();
-export const db = firebase.database();
+export const db = firebase.firestore();
 
 Vue.config.productionTip = false
 

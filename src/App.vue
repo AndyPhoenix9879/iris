@@ -26,20 +26,18 @@ export default {
 </script>
 
 <style>
-
 .mainContainer {
   display: flex;
   flex-direction: column;
   position: absolute;
   align-items: center;
-  justify-content: center;
   text-align: center;
   padding: 0 20% 20px 20%;
   width: 100%;
   height: 100%;
   top: 0;
   z-index: -999;
-  min-width: 1000px;
+  min-width: 800px;
 }
 .Card {
   border-radius: 20px;
@@ -48,7 +46,7 @@ export default {
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
-  min-width: 1000px;
+  min-width: 800px;
 }
 .footer {
   background-color: white;
@@ -56,6 +54,7 @@ export default {
   box-shadow: 0px -6px 6px -2px rgba(0,0,0,0.10);
   font-size: 14px;
   color: #606266;
+  min-width: 800px;
 }
 .footer img {
     height: 26px;
