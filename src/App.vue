@@ -3,7 +3,7 @@
     <div id="nav" style="z-index: 1;">
 
       <div class="navEmblem">
-        <b> Lai's Webpage </b>
+        <b> Derpy Web </b>
       </div>
 
       <div class="navItem">
