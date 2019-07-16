@@ -8,7 +8,7 @@
                 <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>-->
                 <div class="CardContent">
 
-                    <a :href=value.url style="outline:none;">
+                    <a :href=value.url style="outline:none;" target="_blank">
                         <div class="TypeBox">
                             {{value.type}}
                         </div>
