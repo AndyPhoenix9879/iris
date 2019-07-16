@@ -55,6 +55,7 @@ export default {
   font-size: 14px;
   color: #606266;
   min-width: 800px;
+  width:100%;
 }
 .footer img {
     height: 26px;
