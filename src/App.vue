@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div id="nav" style="z-index: 1;">
 
       <div class="navEmblem">
         <b> Lai's Webpage </b>
@@ -36,7 +36,6 @@ export default {
   width: 100%;
   height: 100%;
   top: 0;
-  z-index: -999;
   min-width: 800px;
 }
 .Card {
