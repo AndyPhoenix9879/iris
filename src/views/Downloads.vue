@@ -2,15 +2,16 @@
     <div class="mainContainer">
         <img src="https://lh3.googleusercontent.com/PPLEBPbQjUrMRleHOiDUnuvfLK_6XRKeUbMohSMGpk-NYaZnxvSUTM8awSJFmqvzt9gAZwt0xSE1XkqEzYrH9ZG3gyWMIbYpPCXP_Xx_BxMoPGWPK_CmTSSvYPPeynB99jf8W9RT2_yXkKRN55T_F_9BAGyadi42q4zS5fRmLUJyU9g_pRLGXaqr32B3qETItxLynw7LxafPB2sV6w4fG4AA61R2pGFALVuTyk4cjTTEDMFQw4HM-edtnGW7FzDmeaUU0MOzAMSnJbPDR_-JJfALKcLbzDw_59yCIYNpsQIeMAqXbuVMv8nmjd7oITono7_3_ijOZa9R3D_W2UOE2jviopBncNvv0xBlThng2Ki9yfAfHOc2FcsKSiB0HhMJA1QnFdznxyB3Wk8wXO52OkY5ABpofmP4Ka1AfDcGXfUQjkirkUDWu0QsFfUCwN3o5IvBPdQ4AD0Q6N0MmPyoZpsdVcoBjpRu7rRnPyo1WG0ldhdsHXGe6bzClggVpj_SSJpT1PdAUhRCBONmPUSiZKPl2HWF6Fuq_hbJXMyV9-jenxJ7CeH-7IcTAMxeTJxEYvaOB9OLBQUfMcRt6CdRAGUKqXFpepro6U0o_DyvaeeyHI_c--yROCaOAnjG2fUE_iaVj8StPPIvDQxM7xNJApFWuaOoxCYh=w3166-h1780-no"
         style="width:100%; height:100%; position:fixed; z-index:-9999; top:0; min-width: 1000px;">
-        
-        <div class="Card" v-for="(value,index) in someStuff" v-bind:key="value.index">
-            <div class="CardContent">
-                {{index+1}}. {{value.name}}
+        <div class="tray">
+            <div class="Card" v-for="(value,index) in someStuff" v-bind:key="value.index">
+                <div class="CardContent">
+                    {{index+1}}. {{value.name}}
+                </div>
+                <el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>
             </div>
-            <el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>
-        </div>
 
-        <el-button type="success" circle icon="el-icon-plus" id="add" @click="addList"></el-button>
+            <el-button type="success" circle icon="el-icon-plus" id="add" @click="addList"></el-button>
+        </div>
     </div>
 </template>
 <script>
@@ -70,13 +71,19 @@ export default {
     font-size: 5px;
     padding: 5px;
 }
-.mainContainer {
-    margin-top: 65px;
+.tray {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .Card {
@@ -86,6 +93,13 @@ export default {
     margin-right: 10px;
     width: 260px;
     height: 130px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
+    transition: linear 0.1s;
+}
+
+.Card:hover {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    transition: linear 0.15s;
 }
  
 </style>
