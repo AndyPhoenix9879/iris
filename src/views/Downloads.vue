@@ -4,7 +4,10 @@
         style="width:100%; height:100%; position:fixed; z-index:-9999; top:0; min-width: 1000px;">
         
         <div class="Card" v-for="(value,index) in someStuff" v-bind:key="value.index">
-            {{index+1}}. {{value.name}}
+            <div class="CardContent">
+                {{index+1}}. {{value.name}}
+            </div>
+            <el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>
         </div>
 
         <el-button type="success" circle icon="el-icon-plus" id="add" @click="addList"></el-button>
@@ -23,6 +26,11 @@ export default {
             db.collection('Names').add({name:"tempDATA"}).then(() => {
                 console.log("Added");
             })
+        },
+        remove(index) {
+            db.collection('Names').doc(this.someStuff[index].id).delete().then(() =>{
+                console.log("Deleted");
+            })
         }
     },
     created() {
@@ -31,13 +39,13 @@ export default {
             gotChange.forEach(change => {
                 if (change.type === 'added'){
                     this.someStuff.push({
-                        ...change.doc.data()
+                        ...change.doc.data(),
+                        id: change.doc.id
                     })
                 } else if (change.type === 'removed'){
                     for (var i = 0; i < this.someStuff.length; i++) {
                         if (this.someStuff[i].name === change.doc.data().name) {
                             this.someStuff.splice(i, 1);
-                            console.log("found it at", i);
                             break;
                         }
                     }
@@ -58,8 +66,27 @@ export default {
 #add:active {
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.35);
 }
+#min {
+    font-size: 5px;
+    padding: 5px;
+}
 .mainContainer {
     margin-top: 65px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
+
+.Card {
+    width: 50px;
+    min-width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 260px;
+    height: 130px;
+}
+ 
 </style>
 
