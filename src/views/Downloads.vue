@@ -3,9 +3,16 @@
         <img src="https://lh3.googleusercontent.com/PPLEBPbQjUrMRleHOiDUnuvfLK_6XRKeUbMohSMGpk-NYaZnxvSUTM8awSJFmqvzt9gAZwt0xSE1XkqEzYrH9ZG3gyWMIbYpPCXP_Xx_BxMoPGWPK_CmTSSvYPPeynB99jf8W9RT2_yXkKRN55T_F_9BAGyadi42q4zS5fRmLUJyU9g_pRLGXaqr32B3qETItxLynw7LxafPB2sV6w4fG4AA61R2pGFALVuTyk4cjTTEDMFQw4HM-edtnGW7FzDmeaUU0MOzAMSnJbPDR_-JJfALKcLbzDw_59yCIYNpsQIeMAqXbuVMv8nmjd7oITono7_3_ijOZa9R3D_W2UOE2jviopBncNvv0xBlThng2Ki9yfAfHOc2FcsKSiB0HhMJA1QnFdznxyB3Wk8wXO52OkY5ABpofmP4Ka1AfDcGXfUQjkirkUDWu0QsFfUCwN3o5IvBPdQ4AD0Q6N0MmPyoZpsdVcoBjpRu7rRnPyo1WG0ldhdsHXGe6bzClggVpj_SSJpT1PdAUhRCBONmPUSiZKPl2HWF6Fuq_hbJXMyV9-jenxJ7CeH-7IcTAMxeTJxEYvaOB9OLBQUfMcRt6CdRAGUKqXFpepro6U0o_DyvaeeyHI_c--yROCaOAnjG2fUE_iaVj8StPPIvDQxM7xNJApFWuaOoxCYh=w3166-h1780-no"
         style="width:100%; height:100%; position:fixed; z-index:-9999; top:0; min-width: 1000px;">
         <div class="tray">
-            <div class="Card" v-for="(value,index) in someStuff" v-bind:key="value.index">
+            <div class="Card" v-for="(value, index) in someStuff" v-bind:key="value.index">
                 <div class="CardContent">
-                    <a :href=value.url>{{index+1}}. {{value.name}}</a>
+
+                    <div class="TypeBox">
+                    </div>
+                    
+                    <div class="Title">
+                        <a :href=value.url>{{value.name}}</a>
+                    </div>
+
                 </div>
                 <el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>
             </div>
@@ -25,12 +32,23 @@ export default {
     methods: {
         addList() {
             db.collection('Names').add({name:"tempDATA"}).then(() => {
+                var name = "tempData";
                 console.log("Added");
+                this.$notify({
+                    title: 'Success',
+                    message:`"${name}" has been added successfully`,
+                    type: 'success'
+                });
             })
         },
         remove(index) {
             db.collection('Names').doc(this.someStuff[index].id).delete().then(() =>{
                 console.log("Deleted");
+                this.$notify({
+                    title: 'Success',
+                    message:`Item has been removed successfully`,
+                    type: 'success'
+                });
             })
         }
     },
@@ -79,6 +97,7 @@ export default {
     outline: none;
     font-size: 5px;
     padding: 5px;
+    float: right;
 }
 .tray {
     display: flex;
@@ -99,26 +118,27 @@ export default {
     padding-right: 10px;
     padding-left: 10px;
 }
-
 .Card {
     width: 50px;
     min-width: 50px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 0px;
-    padding: 20px;
+    /*padding: 20px;*/
+    padding:0;
     width: 300px;
-    height: 130px;
-    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
+    height: 170px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15);
     transition: linear 0.1s;
+    position: relative;
 }
 
 .Card:hover {
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
     transition: linear 0.15s;
 }
 .Card:active {
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
     transition: linear 0.08s;
 }
 .CardContent a {
@@ -126,7 +146,17 @@ export default {
     color: inherit;
 }
 .CardContent a:hover {
-    color: gray;
+    color:#EBEEF5;
+}
+.Title {
+    background-color: #409EFF;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    border-radius: 0px 0px 20px 20px;
 }
 </style>
 
