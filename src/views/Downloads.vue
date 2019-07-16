@@ -1,36 +1,47 @@
 <template>
+<div>
     <div class="mainContainer">
         <img src="https://lh3.googleusercontent.com/PPLEBPbQjUrMRleHOiDUnuvfLK_6XRKeUbMohSMGpk-NYaZnxvSUTM8awSJFmqvzt9gAZwt0xSE1XkqEzYrH9ZG3gyWMIbYpPCXP_Xx_BxMoPGWPK_CmTSSvYPPeynB99jf8W9RT2_yXkKRN55T_F_9BAGyadi42q4zS5fRmLUJyU9g_pRLGXaqr32B3qETItxLynw7LxafPB2sV6w4fG4AA61R2pGFALVuTyk4cjTTEDMFQw4HM-edtnGW7FzDmeaUU0MOzAMSnJbPDR_-JJfALKcLbzDw_59yCIYNpsQIeMAqXbuVMv8nmjd7oITono7_3_ijOZa9R3D_W2UOE2jviopBncNvv0xBlThng2Ki9yfAfHOc2FcsKSiB0HhMJA1QnFdznxyB3Wk8wXO52OkY5ABpofmP4Ka1AfDcGXfUQjkirkUDWu0QsFfUCwN3o5IvBPdQ4AD0Q6N0MmPyoZpsdVcoBjpRu7rRnPyo1WG0ldhdsHXGe6bzClggVpj_SSJpT1PdAUhRCBONmPUSiZKPl2HWF6Fuq_hbJXMyV9-jenxJ7CeH-7IcTAMxeTJxEYvaOB9OLBQUfMcRt6CdRAGUKqXFpepro6U0o_DyvaeeyHI_c--yROCaOAnjG2fUE_iaVj8StPPIvDQxM7xNJApFWuaOoxCYh=w3166-h1780-no"
         style="width:100%; height:100%; position:fixed; z-index:-9999; top:0; min-width: 1000px;">
         <div class="tray">
             <div class="Card" v-for="(value, index) in someStuff" v-bind:key="value.index">
+                <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>-->
                 <div class="CardContent">
 
-                    <div class="TypeBox">
-                    </div>
+                    <a :href=value.url style="outline:none;">
+                        <div class="TypeBox">
+                            {{value.type}}
+                        </div>
                     
-                    <div class="Title">
-                        <a :href=value.url>{{value.name}}</a>
-                    </div>
+                        <div class="Title">
+                            {{value.name}}
+                        </div>
+                    </a>
 
                 </div>
-                <el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>
+                
             </div>
 
-            <el-button type="success" circle icon="el-icon-plus" id="add" @click="addList"></el-button>
+            <!--<el-button type="success" circle icon="el-icon-plus" id="add" @click="addList"></el-button>-->
         </div>
     </div>
+    <webfooter/>
+</div>
 </template>
 <script>
 import { db } from '@/main.js'
+import webfooter from './footer'
 export default {
+    components: {
+        webfooter
+    },
     data() {
         return {
             someStuff: []
         };
     },
     methods: {
-        addList() {
+        /*addList() {
             db.collection('Names').add({name:"tempDATA"}).then(() => {
                 var name = "tempData";
                 console.log("Added");
@@ -40,8 +51,8 @@ export default {
                     type: 'success'
                 });
             })
-        },
-        remove(index) {
+        },*/
+        /*remove(index) {
             db.collection('Names').doc(this.someStuff[index].id).delete().then(() =>{
                 console.log("Deleted");
                 this.$notify({
@@ -50,7 +61,7 @@ export default {
                     type: 'success'
                 });
             })
-        }
+        }*/
     },
     created() { //when webpage loads
         db.collection('Names').onSnapshot(res => { //snapshot is just a preview or something of the stuff inside the collection
@@ -73,6 +84,8 @@ export default {
                         if (this.someStuff[i].id === change.doc.id) { 
                             //console.log("Changing", this.someStuff[i].name, "to", change.doc.data().name);
                             this.someStuff[i].name = change.doc.data().name;
+                            this.someStuff[i].url = change.doc.data().url;
+                            this.someStuff[i].type = change.doc.data().type;
                             break;
                         }
                     }
@@ -98,6 +111,9 @@ export default {
     font-size: 5px;
     padding: 5px;
     float: right;
+}
+.mainContainer {
+    position: relative;
 }
 .tray {
     display: flex;
@@ -126,15 +142,15 @@ export default {
     margin-bottom: 0px;
     /*padding: 20px;*/
     padding:0;
-    width: 300px;
+    width: 200px;
     height: 170px;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     transition: linear 0.1s;
     position: relative;
 }
 
 .Card:hover {
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.15);
     transition: linear 0.15s;
 }
 .Card:active {
@@ -146,9 +162,19 @@ export default {
     color: inherit;
 }
 .CardContent a:hover {
-    color:#EBEEF5;
+    color:#F2F6FC;
+}
+.TypeBox {
+    clear: both;
+    line-height: 125px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #DCDFE6;
 }
 .Title {
+    overflow: hidden;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
     background-color: #409EFF;
     color: white;
     height: 50px;
@@ -157,6 +183,10 @@ export default {
     bottom: 0;
     position: absolute;
     border-radius: 0px 0px 20px 20px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
 }
 </style>
 
