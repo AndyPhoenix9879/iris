@@ -168,6 +168,7 @@ export default {
     transition: linear 0.1s;
 }
 .Card {
+    border-radius: 10px;
     width: 50px;
     min-width: 50px;
     margin-left: 10px;
@@ -175,7 +176,7 @@ export default {
     margin-bottom: 0px;
     /*padding: 20px;*/
     padding:0;
-    width: 200px;
+    width: 170px;
     height: 170px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     transition: linear 0.1s;
@@ -199,7 +200,6 @@ export default {
     color:#F2F6FC;
 }
 .TypeBox {
-    line-height: 120px;
     font-size: 40px;
     font-weight: bolder;
     color: #DCDFE6;
@@ -207,9 +207,8 @@ export default {
     display: flex;
     align-items: center;
     align-content: center;
-    align-self: center;
     justify-content: center;
-    height: 120px;
+    height: 125px;
 }
 .TypeBox img {
     width: 100%;
@@ -224,12 +223,11 @@ export default {
     padding: 0 10px 0 10px;
     background-color: #409EFF;
     color: white;
-    height: 50px;
-    line-height: 50px;
+    height: 45px;
+    line-height: 45px;
     width: 100%;
     bottom: 0;
     position: absolute;
-    border-radius: 0px 0px 20px 20px;
 }
 .footer {
     position: fixed;
