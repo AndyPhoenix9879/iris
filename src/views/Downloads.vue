@@ -5,18 +5,18 @@
 
         <div class="searchContainer">
             <i class="el-icon-search" style="position:absolute;"></i>
-            <input v-model="text" placeholder="Search" class="traySearch">
+            <input v-model="search" placeholder="Search" class="traySearch">
         </div>
 
         <img src="https://lh3.googleusercontent.com/PPLEBPbQjUrMRleHOiDUnuvfLK_6XRKeUbMohSMGpk-NYaZnxvSUTM8awSJFmqvzt9gAZwt0xSE1XkqEzYrH9ZG3gyWMIbYpPCXP_Xx_BxMoPGWPK_CmTSSvYPPeynB99jf8W9RT2_yXkKRN55T_F_9BAGyadi42q4zS5fRmLUJyU9g_pRLGXaqr32B3qETItxLynw7LxafPB2sV6w4fG4AA61R2pGFALVuTyk4cjTTEDMFQw4HM-edtnGW7FzDmeaUU0MOzAMSnJbPDR_-JJfALKcLbzDw_59yCIYNpsQIeMAqXbuVMv8nmjd7oITono7_3_ijOZa9R3D_W2UOE2jviopBncNvv0xBlThng2Ki9yfAfHOc2FcsKSiB0HhMJA1QnFdznxyB3Wk8wXO52OkY5ABpofmP4Ka1AfDcGXfUQjkirkUDWu0QsFfUCwN3o5IvBPdQ4AD0Q6N0MmPyoZpsdVcoBjpRu7rRnPyo1WG0ldhdsHXGe6bzClggVpj_SSJpT1PdAUhRCBONmPUSiZKPl2HWF6Fuq_hbJXMyV9-jenxJ7CeH-7IcTAMxeTJxEYvaOB9OLBQUfMcRt6CdRAGUKqXFpepro6U0o_DyvaeeyHI_c--yROCaOAnjG2fUE_iaVj8StPPIvDQxM7xNJApFWuaOoxCYh=w3166-h1780-no"
         style="width:100%; height:100%; position:fixed; z-index:-9999; top:0; min-width: 1000px;">
         <div class="tray">
-            <div class="Card" v-for="(value, index) in someStuff" v-bind:key="value.index">
+            <div class="Card" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
                 <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>-->
                 <div class="CardContent">
 
                     <a :href=value.url style="outline:none;" target="_blank">
-                        <div class="TypeBox" v-if="value.type==='JPG'">
+                        <div class="TypeBox" v-if="value.type==='pic'">
                             <img :src="value.url">
                         </div>
                         <div class="TypeBox" v-else>
@@ -47,7 +47,8 @@ export default {
     },
     data() {
         return {
-            someStuff: []
+            someStuff: [],
+            search: ''
         };
     },
     methods: {
@@ -102,6 +103,13 @@ export default {
                 }
             })
         })
+    },
+    computed: {
+        filteredSearch: function() {
+            return this.someStuff.filter((data) => {
+                return data.name.toLowerCase().match(this.search.toLowerCase())
+            });
+        }
     }
 }
 </script>
@@ -178,18 +186,18 @@ export default {
     padding:0;
     width: 170px;
     height: 170px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-    transition: linear 0.1s;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: linear 0.2s;
     position: relative;
     overflow: hidden;
 }
 
 .Card:hover {
-    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.15);
-    transition: linear 0.15s;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    transition: linear 0.2s;
 }
 .Card:active {
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12);
     transition: linear 0.08s;
 }
 .CardContent a {
