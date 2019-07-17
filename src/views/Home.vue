@@ -39,7 +39,7 @@ export default {
   bottom: 0;
 }
 .Derp {
-  font-size: 50px;
+  font-size: 30px;
 }
 #head {
   font-size: 100px;
