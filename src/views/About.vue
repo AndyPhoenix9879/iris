@@ -20,7 +20,6 @@
         regarded as my playground project where I play with whatever there is to play around with in Web Development. 
         Other than that, I will use this as my platform to share stuffs I think is either helpful
         or cool around the web as well as a CV profile tab just for the sake of it. Enjoy! 
-        <el-divider></el-divider>
         
       </p>
     </div>
@@ -44,6 +43,5 @@ export default {
 <style scoped>
 .mainContainer {
   position: relative;
-
 }
 </style>
