@@ -27,16 +27,11 @@ export default {
 
 <style>
 .mainContainer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  align-items: center;
-  text-align: center;
   padding: 0 20% 20px 20%;
   width: 100%;
   height: 100%;
-  top: 0;
   min-width: 800px;
+  min-height: 600px;
 }
 .Card {
   border-radius: 20px;
@@ -48,6 +43,7 @@ export default {
   min-width: 800px;
 }
 .footer {
+  height: 250px;
   background-color: white;
   padding: 30px 20% 30px 20%;
   box-shadow: 0px -6px 6px -2px rgba(0,0,0,0.10);
@@ -57,7 +53,7 @@ export default {
   width:100%;
 }
 .footer img {
-    height: 26px;
+    height: 20px;
     padding-right: 5px;
     padding-left: 5px;
 }
