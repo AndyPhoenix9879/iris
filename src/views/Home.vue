@@ -6,7 +6,7 @@
     <div class="Derp">
       <br>
       <span id="head"><b>Derpy Web</b></span><br>
-      because there will always be a fun side to everything<br><br>
+      because there is always a fun side to anything and everything<br><br>
     </div>
   </div>
   <webfooter/>

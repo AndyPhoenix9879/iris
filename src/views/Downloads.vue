@@ -5,7 +5,7 @@
 
         <div class="searchContainer">
             <i class="el-icon-search" style="position:absolute;"></i>
-            <input v-model="search" placeholder="Search stuffs" class="traySearch">
+            <input v-model="search" placeholder="Search stuffs or by file format i.e. pdf, docx" class="traySearch">
         </div>
 
         <div class="tray">
@@ -120,6 +120,7 @@ export default {
 <style scoped>
 .mainContainer {
     text-align: center;
+    min-height: 600px;
 }
 .searchContainer {
     height: auto;
@@ -184,7 +185,7 @@ export default {
     transition: linear 0.1s;
 }
 .traySearch:focus {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
     transition: linear 0.1s;
 }
 .Card {
