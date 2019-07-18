@@ -7,10 +7,7 @@
       <br>
       <span id="head"><b>Derpy Web</b></span><br>
       because there will always be a fun side to everything<br><br>
-
-
     </div>
-
   </div>
   <webfooter/>
 </div>
@@ -28,18 +25,13 @@ export default {
 
 <style scoped>
 .mainContainer {
-  padding-top: 50px;
-  padding-bottom: 90px;
-  display: block;
-  position: relative;
-  text-align: left;
-}
-.webfooter {
-  position: fixed;
-  bottom: 0;
+  margin: 100px 0 0 0;
+  min-width: 600px;
+  min-height: 520px;
 }
 .Derp {
   font-size: 30px;
+  min-height: 100%;
 }
 #head {
   font-size: 100px;
