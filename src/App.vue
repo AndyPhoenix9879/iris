@@ -9,7 +9,7 @@
       <div class="navItem">
         <router-link to="/">Home</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/about">About</router-link> <el-divider direction="vertical"></el-divider>
-        <router-link to="/profile">Profile</router-link> <el-divider direction="vertical"></el-divider>
+        <router-link to="/portfolio">Portfolio</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/downloads">Downloads</router-link> 
       </div>
 
@@ -31,7 +31,7 @@ export default {
   width: 100%;
   height: 100%;
   min-width: 800px;
-  min-height: 600px;
+  min-height: 620px;
 }
 .Card {
   border-radius: 20px;
