@@ -200,10 +200,17 @@ export default {
     margin: 0;
     outline:none;
     border:none; 
+    transition: linear 0.1s;
 }
 .traylist:hover {
     transform: scale(1.5);
     color: #67C23A;
+    transition: linear 0.15s;
+}
+.traylist.clicked {
+    transform: scale(1.3);
+    color: #67C23A;
+    transition: linear 0.15s;
 }
 .traySearch:focus {
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
