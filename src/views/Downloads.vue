@@ -14,13 +14,12 @@
                 <i class="el-icon-menu"></i>
             </div>
         </div>
+        <hr>
         <div class="tray">
-
             <div class="notFound" v-if="filteredSearch==''">
                 <h1>Nothing.. :(</h1>
             </div>
             
-
             <div class="Card" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
                 <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>--> 
                 <div class="CardContent">
@@ -132,7 +131,8 @@ export default {
     display: flex;
     height: auto;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .searchContainer i {
     position: absolute;
@@ -165,8 +165,6 @@ export default {
     text-align: center;
     display: flex;
     width: 100%;
-    height: auto;
-    margin-top: 20px;
     margin-bottom: 20px;
     flex-direction: row;
     justify-content: space-around;
@@ -174,10 +172,7 @@ export default {
     align-content: flex-start;
     flex-wrap: wrap;
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
     min-width: 600px;
-    padding-top: 1px;
     padding-bottom: 20px;
     padding-right: 10px;
     padding-left: 10px;
@@ -223,7 +218,8 @@ export default {
     min-width: 50px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top: 10px;
     /*padding: 20px;*/
     padding:0;
     width: 170px;
