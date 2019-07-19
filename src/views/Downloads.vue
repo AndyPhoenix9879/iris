@@ -5,7 +5,7 @@
 
         <div class="searchContainer">
             <i class="el-icon-search" style="position:absolute;"></i>
-            <input v-model="search" placeholder="Search stuffs or by file format i.e. pdf, docx" class="traySearch">
+            <input v-model="search" placeholder="Search by name or by file format i.e. pdf, docx" class="traySearch">
         </div>
 
         <div class="tray">
@@ -199,7 +199,7 @@ export default {
     padding:0;
     width: 170px;
     height: 170px;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
     transition: linear 0.2s;
     position: relative;
     overflow: hidden;
