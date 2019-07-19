@@ -162,6 +162,7 @@ export default {
     float: right;
 }
 .tray {
+    text-align: center;
     display: flex;
     width: 100%;
     height: auto;
@@ -194,18 +195,18 @@ export default {
     display: inline-block;
 }
 .traylist {
-    font-size: 20px;
+    font-size: 25px;
+    padding-right: 65px;
+    margin-top: -5px;
     width: 5%;
-    float: right;
-    margin: 0;
     outline:none;
     border:none; 
     transition: linear 0.1s;
 }
 .traylist:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: #67C23A;
-    transition: linear 0.15s;
+    transition: linear 0.1s;
 }
 .traylist.clicked {
     transform: scale(1.3);
