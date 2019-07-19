@@ -8,16 +8,16 @@
             <input v-model="search" placeholder="Search by name or by file format i.e. pdf, docx" class="traySearch">
 
             <div class="traylist">
-                <i class="el-icon-notebook-2"></i>
+                <i id="list" class="el-icon-notebook-2" @click="viewClick()"></i>
             </div> 
             <div class="traylist">
-                <i class="el-icon-menu"></i>
+                <i id="blk" class="el-icon-menu" @click="viewClick()"></i>
             </div>
         </div>
         <hr>
         <div class="tray">
             <div class="notFound" v-if="filteredSearch==''">
-                <h1>Nothing.. :(</h1>
+                <h1><br><br><br>Nothing... :(</h1>
             </div>
             
             <div class="Card" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
@@ -28,7 +28,7 @@
                             <img :src="value.url">
                         </div>
                         <div class="TypeBox" v-else>
-                            {{value.type}}
+                            {{value.type.toUpperCase()}}
                         </div>
                     
                         <div class="Title">
@@ -83,6 +83,9 @@ export default {
                 });
             })
         }*/
+        viewClick() {
+            console.log("HELLO");
+        }
     },
     created() { //when webpage loads, not under method btw
         db.collection('Names').onSnapshot(res => { //snapshot is just a preview or something of the stuff inside the collection
@@ -198,15 +201,17 @@ export default {
     border:none; 
     transition: linear 0.1s;
 }
-.traylist:hover {
-    transform: scale(1.2);
+#list {
+    transition: linear 0.1s;
+}
+#list:hover {
+    transform: scale(1.3);
     color: #67C23A;
     transition: linear 0.1s;
 }
-.traylist.clicked {
-    transform: scale(1.3);
+#blk {
     color: #67C23A;
-    transition: linear 0.15s;
+    transform: scale(1.5);
 }
 .traySearch:focus {
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
