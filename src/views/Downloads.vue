@@ -224,14 +224,14 @@ export default {
     padding:0;
     width: 170px;
     height: 170px;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
     transition: linear 0.2s;
     position: relative;
     overflow: hidden;
 }
 
 .Card:hover {
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     transition: linear 0.2s;
 }
 .Card:active {
