@@ -4,15 +4,22 @@
     <div class="mainContainer" style="position:relative;">
 
         <div class="searchContainer">
-            <i class="el-icon-search" style="position:absolute;"></i>
+            <i class="el-icon-search"></i>
             <input v-model="search" placeholder="Search by name or by file format i.e. pdf, docx" class="traySearch">
-        </div>
 
+            <div class="traylist">
+                <i class="el-icon-notebook-2"></i>
+            </div> 
+            <div class="traylist">
+                <i class="el-icon-menu"></i>
+            </div>
+        </div>
         <div class="tray">
 
             <div class="notFound" v-if="filteredSearch==''">
                 <h1>Nothing.. :(</h1>
             </div>
+            
 
             <div class="Card" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
                 <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>--> 
@@ -119,10 +126,10 @@ export default {
 </script>
 <style scoped>
 .mainContainer {
-    text-align: center;
     min-height: 600px;
 }
 .searchContainer {
+    display: flex;
     height: auto;
     width: 100%;
     margin-top: 20px;
@@ -169,20 +176,34 @@ export default {
     border-radius: 20px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
     min-width: 600px;
+    padding-top: 1px;
     padding-bottom: 20px;
     padding-right: 10px;
     padding-left: 10px;
 }
 .traySearch {
-    width: 100%;
+    width: 90%;
     border-radius: 20px;
     outline:none;
     border:none; 
     margin-bottom: 0; 
-    padding:10px; 
+    padding: 10px 0 10px;
     padding-left: 45px;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
     transition: linear 0.1s;
+    display: inline-block;
+}
+.traylist {
+    font-size: 20px;
+    width: 5%;
+    float: right;
+    margin: 0;
+    outline:none;
+    border:none; 
+}
+.traylist:hover {
+    transform: scale(1.5);
+    color: #67C23A;
 }
 .traySearch:focus {
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
