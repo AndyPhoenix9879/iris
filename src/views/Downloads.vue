@@ -45,7 +45,7 @@
                 
             </div>
             </span>
-            <span v-else class="tray">
+            <span v-else class="tray_list">
                 <div class="Card_list" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
                 <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>--> 
                 
@@ -196,7 +196,7 @@ export default {
     text-align: center;
     display: flex;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -207,6 +207,20 @@ export default {
     padding-bottom: 20px;
     padding-right: 10px;
     padding-left: 10px;
+}
+.tray_list {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    margin-top: -20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    background-color: white;
+    min-width: 600px;
+    border-bottom: 1px solid #F2F6FC;
 }
 .traySearch {
     width: 90%;
@@ -256,13 +270,12 @@ export default {
     overflow: hidden;
 }
 .Card_list {
-    border-radius: 10px;
-    margin-bottom: 40px;
-    margin-top: -30px;
+    border-radius: 0;
     /*padding: 20px;*/
+    border: 1px solid #F2F6FC;
+    border-bottom: none;
     padding: 10px;
     width: 100%;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.12);
     transition: linear 0.2s;
     text-align: left;
 }
@@ -275,11 +288,11 @@ export default {
     transition: linear 0.08s;
 }
 .Card_list:hover {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 12px -8px rgba(0, 0, 0, 0.6);
     transition: linear 0.2s;
 }
 .Card_list:active {
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.12);
     transition: linear 0.08s;
 }
 .CardContent a {
