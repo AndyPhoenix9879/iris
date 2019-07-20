@@ -7,7 +7,10 @@
             <i class="el-icon-search"></i>
             <input v-model="search" placeholder="Search by name or by file format i.e. pdf, docx" class="traySearch">
 
-            <div class="traylist">
+            <div class="traylist" v-if="viewType==true">
+                <i id="blk" class="el-icon-notebook-2" @click="viewClick()"></i>
+            </div>
+            <div class="traylist" v-else>
                 <i id="blk" class="el-icon-menu" @click="viewClick()"></i>
             </div>
 
