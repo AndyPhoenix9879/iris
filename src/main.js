@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import jQuery from 'jquery'
 import './registerServiceWorker'
 
 import 'popper.js';
@@ -15,6 +16,8 @@ import locale from 'element-ui/lib/locale/lang/en'
 
 import firebase from 'firebase/app'
 import 'firebase/firestore'
+
+window.$ = window.jQuery = jQuery;
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
