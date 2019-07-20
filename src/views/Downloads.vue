@@ -1,28 +1,29 @@
 <template>
 <div>
 
-    <div class="mainContainer" style="position:relative;">
+    <div class="mainContainer">
 
         <div class="searchContainer">
             <i class="el-icon-search"></i>
             <input v-model="search" placeholder="Search by name or by file format i.e. pdf, docx" class="traySearch">
 
             <div class="traylist">
-                <i id="list" class="el-icon-notebook-2" @click="viewClick()"></i>
-            </div> 
-            <div class="traylist">
                 <i id="blk" class="el-icon-menu" @click="viewClick()"></i>
             </div>
+
         </div>
         <hr>
         <div class="tray">
             <div class="notFound" v-if="filteredSearch==''">
                 <h1><br><br><br>Nothing... :(</h1>
             </div>
-            
+        </div>
+            <span v-if="viewType==true" class="tray">
             <div class="Card" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
                 <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>--> 
+                
                 <div class="CardContent">
+
                     <a :href=value.url style="outline:none;" target="_blank">
                         <div class="TypeBox" v-if="value.type==='pic'">
                             <img :src="value.url">
@@ -37,12 +38,31 @@
                     </a>
 
                 </div>
-               
+                
                 
             </div>
-            
+            </span>
+            <span v-else class="tray">
+                <div class="Card_list" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
+                <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>--> 
+                
+                    <div class="CardContent_list">
+
+                        <a :href=value.url style="outline:none;" target="_blank">
+                            <div class="TypeBox_list">
+                                {{value.type.toUpperCase()}}
+                            </div>
+                            <div class="Title_list">
+                                {{value.name}}
+                            </div>
+                        </a>
+
+                    </div>
+                    
+                    
+                </div>
+            </span>
             <!--<el-button type="success" circle icon="el-icon-plus" id="add" @click="addList"></el-button>-->
-        </div>
     </div>
     <webfooter/>
 
@@ -58,7 +78,8 @@ export default {
     data() {
         return {
             someStuff: [],
-            search: ''
+            search: '',
+            viewType: true,
         };
     },
     methods: {
@@ -85,6 +106,9 @@ export default {
         }*/
         viewClick() {
             console.log("HELLO");
+            //var target = $(".Card");
+            //target.hasClass("list")? target.removeClass("list") : target.addClass("list");
+            this.viewType = !this.viewType;
         }
     },
     created() { //when webpage loads, not under method btw
@@ -129,6 +153,7 @@ export default {
 <style scoped>
 .mainContainer {
     min-height: 600px;
+    position:relative;
 }
 .searchContainer {
     display: flex;
@@ -195,31 +220,24 @@ export default {
 .traylist {
     font-size: 25px;
     padding-right: 65px;
-    margin-top: -5px;
+    margin-top: -4px;
+    margin-left: 15px;
     width: 5%;
     outline:none;
     border:none; 
     transition: linear 0.1s;
 }
-#list {
-    transition: linear 0.1s;
-}
-#list:hover {
-    transform: scale(1.3);
-    color: #67C23A;
-    transition: linear 0.1s;
-}
-#blk {
+.traylist:hover {
     color: #67C23A;
     transform: scale(1.5);
 }
+
 .traySearch:focus {
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
     transition: linear 0.1s;
 }
 .Card {
     border-radius: 10px;
-    width: 50px;
     min-width: 50px;
     margin-left: 10px;
     margin-right: 10px;
@@ -234,12 +252,30 @@ export default {
     position: relative;
     overflow: hidden;
 }
-
+.Card_list {
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: -30px;
+    /*padding: 20px;*/
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: linear 0.2s;
+    text-align: left;
+}
 .Card:hover {
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     transition: linear 0.2s;
 }
 .Card:active {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12);
+    transition: linear 0.08s;
+}
+.Card_list:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    transition: linear 0.2s;
+}
+.Card_list:active {
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12);
     transition: linear 0.08s;
 }
@@ -249,6 +285,13 @@ export default {
 }
 .CardContent a:hover {
     color:#F2F6FC;
+}
+.CardContent_list a {
+    text-decoration: none;
+    color: inherit;
+}
+.CardContent_list a:hover {
+    color: #409EFF;
 }
 .TypeBox {
     font-size: 40px;
@@ -268,6 +311,12 @@ export default {
     bottom: 0;
     position: absolute;
 }
+.TypeBox_list {
+    width: 7%;
+    display: inline-block;
+    font-weight: bolder;
+    color: #DCDFE6;
+}
 .Title {
     overflow: hidden;
     font-size: 14px;
@@ -279,6 +328,16 @@ export default {
     width: 100%;
     bottom: 0;
     position: absolute;
+}
+.Title_list {
+    width: 93%;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 10px 0 100px;
+    background-color: white;
+    color: inherit;
+    bottom: 0;
+    border-radius: 10px;
 }
 
 </style>
