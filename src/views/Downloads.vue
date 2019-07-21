@@ -196,7 +196,6 @@ export default {
     text-align: center;
     display: flex;
     width: 100%;
-    margin-bottom: 10px;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -259,7 +258,6 @@ export default {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
-    margin-top: 10px;
     /*padding: 20px;*/
     padding:0;
     width: 170px;
