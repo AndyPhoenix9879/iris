@@ -272,7 +272,7 @@ export default {
     border-bottom: none;
     padding: 10px;
     width: 100%;
-    transition: linear 0.2s;
+    transition: linear 0.35s;
     text-align: left;
 }
 .Card:hover {
@@ -285,7 +285,7 @@ export default {
 }
 .Card_list:hover {
     box-shadow: 0 3px 12px -8px rgba(0, 0, 0, 0.6);
-    transition: linear 0.2s;
+    transition: linear 0.15s;
 }
 .Card_list:active {
     box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.12);
