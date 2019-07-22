@@ -109,8 +109,6 @@ export default {
         }*/
         viewClick() {
             console.log("HELLO");
-            //var target = $(".Card");
-            //target.hasClass("list")? target.removeClass("list") : target.addClass("list");
             this.viewType = !this.viewType;
         }
     },
