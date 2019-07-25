@@ -245,6 +245,10 @@ export default {
     color: #67C23A;
     transform: scale(1.5);
 }
+.traylist:active {
+    color: #409EFF;
+    transform: scale(1);
+}
 
 .traySearch:focus {
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
