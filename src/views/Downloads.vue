@@ -264,7 +264,7 @@ export default {
     padding:0;
     width: 170px;
     height: 170px;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
     transition: linear 0.2s;
     position: relative;
     overflow: hidden;
