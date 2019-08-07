@@ -54,9 +54,12 @@ export default {
     padding-right: 5px;
     padding-left: 5px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .footer {
     padding: 30px 10% 200px 10%;
+  }
+  .mainContainer {
+    padding: 0 10% 20px 10%;
   }
 }
 </style>

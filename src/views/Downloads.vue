@@ -362,7 +362,7 @@ export default {
     bottom: 0;
     border-radius: 10px;*/
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .mainContainer {
     padding: 0 10% 20px 10%;
   }
