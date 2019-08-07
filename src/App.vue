@@ -3,7 +3,7 @@
     <div id="nav" style="z-index: 1;">
 
       <div class="navEmblem">
-        <b> i r i s </b>
+        <b>iris</b>
       </div>
       <!--
       <div class="navItem">
@@ -69,7 +69,6 @@ export default {
   position: sticky;
   position:-webkit-sticky;
   display: flex;
-  min-width: 800px;
   a {
     text-decoration: none;
     font-weight: bold;
@@ -85,12 +84,13 @@ export default {
   font-size: 20px;
   width: 100%;
   text-align: center;
+  letter-spacing: 10px;
 }
-.navItem {
+/*.navItem {
   text-align: right;
   width: 100%;
   a {
     padding: 0 15px 0 15px;
   }
-}
+}*/
 </style>
