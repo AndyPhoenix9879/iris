@@ -9,11 +9,14 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
+      //path: '/',
+      //name: 'home',
+      //component: Home
       path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
+      name: 'downloads',
+      component: () => import('./views/Downloads.vue')
+    }
+    /*{
       path: '/about',
       name: 'about',
       // route level code-splitting
@@ -30,6 +33,6 @@ export default new Router({
       path: '/downloads',
       name: 'downloads',
       component: () => import('./views/Downloads.vue')
-    }
+    }*/
   ]
 })

@@ -3,16 +3,16 @@
     <div id="nav" style="z-index: 1;">
 
       <div class="navEmblem">
-        <b> Derpy Web </b>
+        <b> i r i s </b>
       </div>
-
+      <!--
       <div class="navItem">
         <router-link to="/">Home</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/about">About</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/portfolio">Portfolio</router-link> <el-divider direction="vertical"></el-divider>
         <router-link to="/downloads">Downloads</router-link> 
       </div>
-
+      -->
     </div>
 
     <router-view/>
@@ -30,7 +30,6 @@ export default {
   padding: 0 20% 20px 20%;
   width: 100%;
   height: 100%;
-  min-width: 800px;
   min-height: 620px;
 }
 .Card {
@@ -40,7 +39,6 @@ export default {
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
-  min-width: 800px;
 }
 .footer {
   height: 250px;
@@ -49,7 +47,6 @@ export default {
   box-shadow: 0px -6px 6px -2px rgba(0,0,0,0.10);
   font-size: 14px;
   color: #606266;
-  min-width: 800px;
   width:100%;
 }
 .footer img {
@@ -85,9 +82,9 @@ export default {
   }
 }
 .navEmblem {
+  font-size: 20px;
   width: 100%;
-  margin-left: 50px;
-  min-width: 0px;
+  text-align: center;
 }
 .navItem {
   text-align: right;
@@ -95,6 +92,5 @@ export default {
   a {
     padding: 0 15px 0 15px;
   }
-  min-width: 550px;
 }
 </style>
