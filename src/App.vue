@@ -54,6 +54,11 @@ export default {
     padding-right: 5px;
     padding-left: 5px;
 }
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 30px 10% 200px 10%;
+  }
+}
 </style>
 <style lang="scss" scoped>
 #app {
@@ -93,4 +98,5 @@ export default {
     padding: 0 15px 0 15px;
   }
 }*/
+
 </style>
