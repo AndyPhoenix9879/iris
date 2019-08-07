@@ -5,7 +5,7 @@
 
         <div class="searchContainer">
             <i class="el-icon-search"></i>
-            <input v-model="search" placeholder="Search by name or by file format i.e. pdf, docx" class="traySearch">
+            <input v-model="search" placeholder="Search" class="traySearch">
 
             <div class="traylist" v-if="viewType==true">
                 <i id="blk" class="el-icon-notebook-2" @click="viewClick()"></i>
@@ -362,6 +362,10 @@ export default {
     bottom: 0;
     border-radius: 10px;*/
 }
-
+@media screen and (max-width: 600px) {
+  .mainContainer {
+    padding: 0 10% 20px 10%;
+  }
+}
 </style>
 
