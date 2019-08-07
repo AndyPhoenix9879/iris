@@ -274,7 +274,7 @@ export default {
     /*padding: 20px;*/
     border: 1px solid #F2F6FC;
     border-bottom: none;
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     transition: linear 0.35s;
     text-align: left;
@@ -349,7 +349,7 @@ export default {
     width: 93%;
     display: inline-block;
     font-size: 14px;
-    padding: 0 10px 0 100px;
+    padding: 5px 10px 5px 100px;
     background-color: white;
     color: inherit;
     bottom: 0;
