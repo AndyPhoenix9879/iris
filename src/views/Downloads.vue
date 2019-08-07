@@ -48,20 +48,20 @@
             <span v-else class="tray_list">
                 <div class="Card_list" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
                 <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>--> 
-                
+                <a :href=value.url style="outline:none;" target="_blank">
                     <div class="CardContent_list">
 
-                        <a :href=value.url style="outline:none;" target="_blank">
+                        
                             <div class="TypeBox_list">
                                 {{value.type.toUpperCase()}}
                             </div>
                             <div class="Title_list">
                                 {{value.name}}
                             </div>
-                        </a>
+                        
 
                     </div>
-                    
+                </a>    
                     
                 </div>
             </span>
@@ -200,8 +200,6 @@ export default {
     align-content: flex-start;
     flex-wrap: wrap;
     background-color: white;
-    min-width: 600px;
-    padding-bottom: 20px;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -209,14 +207,12 @@ export default {
     text-align: center;
     display: flex;
     width: 100%;
-    margin-top: -20px;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
     background-color: white;
-    min-width: 600px;
     border-bottom: 1px solid #F2F6FC;
 }
 .traySearch {
@@ -259,7 +255,7 @@ export default {
     min-width: 50px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /*padding: 20px;*/
     padding:0;
     width: 170px;
@@ -278,6 +274,10 @@ export default {
     width: 100%;
     transition: linear 0.35s;
     text-align: left;
+}
+.Card_list a {
+    text-decoration: none;
+    color: inherit;
 }
 .Card:hover {
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -302,11 +302,12 @@ export default {
 .CardContent a:hover {
     color:#F2F6FC;
 }
-.CardContent_list a {
-    text-decoration: none;
-    color: inherit;
+.CardContent_list {
+    display: grid;
+    grid-template-columns: 90px 100%;
+    overflow: hidden;
 }
-.CardContent_list a:hover {
+.Card_list a:hover {
     color: #409EFF;
 }
 .TypeBox {
@@ -328,10 +329,13 @@ export default {
     position: absolute;
 }
 .TypeBox_list {
-    width: 7%;
+    /*width: 60px;
     display: inline-block;
     font-weight: bolder;
+    color: #DCDFE6;*/
     color: #DCDFE6;
+    font-weight: bolder;
+    padding: 3px 5px;
 }
 .Title {
     overflow: hidden;
@@ -346,14 +350,17 @@ export default {
     position: absolute;
 }
 .Title_list {
-    width: 93%;
+    font-size: 14px;
+    padding: 5px 10px;
+    /*width: 100%;
+    overflow: hidden;
     display: inline-block;
     font-size: 14px;
     padding: 5px 10px 5px 100px;
     background-color: white;
     color: inherit;
     bottom: 0;
-    border-radius: 10px;
+    border-radius: 10px;*/
 }
 
 </style>
