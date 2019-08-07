@@ -6,9 +6,8 @@
             <a target="_blank" href="https://www.facebook.com/andy.lai.9879"><img src="../assets/Circle Color/Facebook.png"></a> <el-divider direction="vertical"></el-divider>
             <a target="_blank" href="https://www.instagram.com/lai9879/"><img src="../assets/Circle Color/Instagram.png"></a> 
         
-        <br><br><br><br>
-        The source code for this website may scare off some people. But hey, sometimes, as long as it works right? <br>
-        iris was developed as a centralized web page for me to share my resources in a prettier way 😌 <br><br>
+        <br><br><br>
+        <b>iris</b> was developed as a centralized web page for me to share my resources in a prettier way 😌 <br><br>
         Developed by Lai Jian Shin.<br>
         Copyright 2019 Lai Jian Shin. All rights reserved.
 
