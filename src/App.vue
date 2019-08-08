@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav" style="z-index: 1;">
+    <div id="nav" style="z-index: 9999;">
 
       <div class="navEmblem">
-        <b>iris</b>
+        <router-link to="/"><img src="../public/iris.png"></router-link>
       </div>
       <!--
       <div class="navItem">
@@ -14,8 +14,9 @@
       </div>
       -->
     </div>
-
+    
     <router-view/>
+    
   </div>
 </template>
 <script>
@@ -30,7 +31,6 @@ export default {
   padding: 0 20% 20px 20%;
   width: 100%;
   height: 100%;
-  min-height: 620px;
 }
 .Card {
   border-radius: 20px;
@@ -40,21 +40,8 @@ export default {
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
 }
-.footer {
-  height: 250px;
-  background-color: white;
-  padding: 30px 20% 30px 20%;
-  box-shadow: 0px -6px 6px -2px rgba(0,0,0,0.10);
-  font-size: 14px;
-  color: #606266;
-  width:100%;
-}
-.footer img {
-    height: 20px;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 970px) {
   .footer {
     padding: 30px 10% 200px 10%;
   }
@@ -71,28 +58,23 @@ export default {
   color: #2c3e50;
 }
 #nav {
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   box-shadow: 0px 6px 6px -2px rgba(0,0,0,0.10);
   position: sticky;
   position:-webkit-sticky;
-  display: flex;
-  a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #303133;
-    transition: linear 0.2s;
-    &.router-link-exact-active {
-      color: #67C23A;
-      transition: linear 0.2s;
-    }
-  }
 }
 .navEmblem {
-  font-size: 20px;
   width: 100%;
   text-align: center;
-  letter-spacing: 10px;
+}
+.navEmblem img {
+  height: 50px;
+  transition: linear 0.05s;
+}
+.navEmblem img:active {
+  transition: linear 0.05s;
+  transform: scale(0.8);
 }
 /*.navItem {
   text-align: right;
