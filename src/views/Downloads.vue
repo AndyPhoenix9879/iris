@@ -8,12 +8,16 @@
             <input v-model="search" placeholder="Search" class="traySearch">
 
             <div class="traylist" v-if="viewType==true">
-                <i id="blk" class="el-icon-notebook-2" @click="viewClick()"></i>
+                <el-tooltip class="item" effect="dark" content="List view" placement="bottom-start" hide-after="1200">
+                    <i id="blk" class="el-icon-notebook-2" @click="viewClick()"></i>
+                </el-tooltip>
             </div>
             <div class="traylist" v-else>
-                <i id="blk" class="el-icon-menu" @click="viewClick()"></i>
+                <el-tooltip class="item" effect="dark" content="Block view" placement="bottom-start" hide-after="1200">
+                    <i id="blk" class="el-icon-menu" @click="viewClick()"></i>
+                </el-tooltip>
             </div>
-
+                
         </div>
         <hr>
         <div class="tray">
@@ -153,15 +157,21 @@ export default {
 </script>
 <style scoped>
 .mainContainer {
-    min-height: 600px;
+    min-height: 630px;
+    max-height: 630px;
+    overflow: scroll;
     position:relative;
 }
 .searchContainer {
     display: flex;
     height: auto;
     width: 100%;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    position: sticky;
+    background-color: white;
+    top: 0px;
+    z-index: 9;
 }
 .searchContainer i {
     position: absolute;
@@ -221,7 +231,7 @@ export default {
     outline:none;
     border:none; 
     margin-bottom: 0; 
-    padding: 10px 0 10px;
+    padding: 10px 15px 10px;
     padding-left: 45px;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
     transition: linear 0.1s;
@@ -242,7 +252,7 @@ export default {
     transform: scale(1.5);
 }
 .traylist:active {
-    color: #409EFF;
+    color: #FFB900;
     transform: scale(1);
 }
 
@@ -260,7 +270,8 @@ export default {
     padding:0;
     width: 170px;
     height: 170px;
-    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    
     transition: linear 0.2s;
     position: relative;
     overflow: hidden;
@@ -280,8 +291,8 @@ export default {
     color: inherit;
 }
 .Card:hover {
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    transition: linear 0.2s;
+    box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.2);
+    transition: linear 0.25s;
 }
 .Card:active {
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12);
@@ -309,6 +320,9 @@ export default {
 }
 .Card_list a:hover {
     color: #409EFF;
+}
+.Card_list a:active {
+    color: #F56C6C;
 }
 .TypeBox {
     font-size: 40px;
@@ -362,10 +376,6 @@ export default {
     bottom: 0;
     border-radius: 10px;*/
 }
-@media screen and (max-width: 700px) {
-  .mainContainer {
-    padding: 0 10% 20px 10%;
-  }
-}
+
 </style>
 
