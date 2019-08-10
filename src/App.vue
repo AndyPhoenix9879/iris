@@ -3,7 +3,7 @@
     <div id="nav" style="z-index: 9999;">
 
       <div class="navEmblem">
-        <router-link to="/"><img src="../public/iris.png"></router-link>
+        <a href=""><img src="../public/iris.png"></a>
       </div>
       <!--
       <div class="navItem">
@@ -27,6 +27,10 @@ export default {
 </script>
 
 <style>
+.el-popover {
+  word-break: normal !important;
+  padding: 25px 25px 10px 25px !important;
+}
 .mainContainer {
   padding: 0 20% 20px 20%;
   width: 100%;
@@ -47,6 +51,9 @@ export default {
   }
   .mainContainer {
     padding: 0 10% 20px 10%;
+  }
+  .fgrid {
+    grid-template-columns: 50px 50px 50px 50px;
   }
 }
 </style>
