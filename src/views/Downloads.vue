@@ -8,13 +8,13 @@
             <input v-model="search" placeholder="Search" class="traySearch">
 
             <div class="traylist" v-if="viewType==true">
-                <el-tooltip class="item" effect="dark" content="List view" placement="bottom-start" hide-after="1200">
-                    <i id="blk" class="el-icon-notebook-2" @click="viewClick()"></i>
+                <el-tooltip class="item" effect="dark" content="List view" placement="bottom-start" open-delay="450" hide-after="1650">
+                    <i class="el-icon-notebook-2" @click="viewClick()"></i>
                 </el-tooltip>
             </div>
             <div class="traylist" v-else>
-                <el-tooltip class="item" effect="dark" content="Block view" placement="bottom-start" hide-after="1200">
-                    <i id="blk" class="el-icon-menu" @click="viewClick()"></i>
+                <el-tooltip class="item" effect="dark" content="Block view" placement="bottom-start" open-delay="450" hide-after="1650">
+                    <i class="el-icon-menu" @click="viewClick()"></i>
                 </el-tooltip>
             </div>
                 
@@ -112,7 +112,6 @@ export default {
             })
         }*/
         viewClick() {
-            console.log("HELLO");
             this.viewType = !this.viewType;
         }
     },
@@ -177,7 +176,6 @@ export default {
     position: absolute;
     margin: auto;
     padding: 13px;
-    padding-left: 20px;
 }
 .notFound {
     color: #909399;
@@ -199,6 +197,9 @@ export default {
     font-size: 5px;
     padding: 5px;
     float: right;
+}
+#blk {
+    text-align: center;
 }
 .tray {
     text-align: center;
@@ -237,21 +238,20 @@ export default {
     transition: linear 0.1s;
     display: inline-block;
 }
-.traylist {
-    font-size: 25px;
-    padding-right: 65px;
-    margin-top: -4px;
-    margin-left: 15px;
-    width: 5%;
+.traylist i {
+    font-size: 30px;
+    padding: 0;
+    margin-top: 12px;
+    margin-left: 38px;
     outline:none;
     border:none; 
     transition: linear 0.1s;
 }
-.traylist:hover {
+.traylist i:hover {
     color: #67C23A;
     transform: scale(1.5);
 }
-.traylist:active {
+.traylist i:active {
     color: #FFB900;
     transform: scale(1);
 }
