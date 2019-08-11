@@ -28,6 +28,7 @@ export default {
 
 <style>
 .el-popover {
+  max-width: 450px !important;
   word-break: normal !important;
   padding: 25px 25px 10px 25px !important;
 }
