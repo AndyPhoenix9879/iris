@@ -17,7 +17,6 @@
                     <el-popover
                         placement="top"
                         title="Iris"
-                        width="500"
                         trigger="click">
                         <p>In greek mythology, Iris was the goddess of rainbow and the messenger of the Gods. <br><br>This webpage aims
                         to impersonify those attributes. The design I implemented hopes to give off a colourful and friendly look, and the
@@ -30,7 +29,6 @@
                     <el-popover
                         placement="top"
                         title="Contact"
-                        width="500"
                         trigger="click">
                         <p>Mobile Tel : +852 69949398<br>
                         Email : <a href="Lai9879m@gmail.com">Lai9879m@gmail.com</a></p>
@@ -47,7 +45,6 @@
                     <el-popover
                         placement="top"
                         title="Legend"
-                        width="500"
                         trigger="click">
                         <p>WEB</p>
                         <button @click="showLegend" id="legend" slot="reference">Legend</button>
