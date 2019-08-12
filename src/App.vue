@@ -56,6 +56,9 @@ export default {
   .fgrid {
     grid-template-columns: 50px 50px 50px 50px;
   }
+  .traylist i {
+    margin-left: 15px !important;
+  }
 }
 </style>
 <style lang="scss" scoped>
