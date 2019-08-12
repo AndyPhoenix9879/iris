@@ -247,13 +247,9 @@ export default {
     border:none; 
     transition: linear 0.1s;
 }
-.traylist i:hover {
+.traylist i:active {
     color: #67C23A;
     transform: scale(1.5);
-}
-.traylist i:active {
-    color: #FFB900;
-    transform: scale(1);
 }
 
 .traySearch:focus {
@@ -377,6 +373,7 @@ export default {
     bottom: 0;
     border-radius: 10px;*/
 }
+
 @media screen and (min-height: 1000px) {
   .mainContainer {
     min-height: 700px;
