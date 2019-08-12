@@ -60,6 +60,37 @@ export default {
     margin-left: 15px !important;
   }
 }
+@media screen and (max-width: 550px) {
+  .Card {
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .TypeBox {
+    font-size: 30px !important;
+    height: 110px !important;
+  }
+  .footer {
+    padding: 30px 5% 200px 5%;
+  }
+  .mainContainer {
+    padding: 0 5% 20px 5%;
+  }
+}
+@media screen and (max-width: 398px) {
+  .Card {
+    height: 120px !important;
+    width: 120px !important;
+  }
+  .TypeBox {
+    font-size: 25px !important;
+    height: 90px !important;
+  }
+  .Title {
+    font-size: 12px !important;
+    height: 37px !important;
+    line-height: 37px !important;
+  }
+}
 </style>
 <style lang="scss" scoped>
 #app {
