@@ -193,5 +193,13 @@ export default {
       grid-template-columns: 10% 80% 10%;
   }
 }
+@media screen and (max-width: 420px) {
+  .footer {
+      grid-template-columns: 10% 80% 10%;
+  }
+  .fgrid {
+      grid-template-columns: 75px 75px 75px 75px;
+  }
+}
 </style>
 
