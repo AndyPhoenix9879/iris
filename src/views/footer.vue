@@ -18,9 +18,10 @@
                         placement="top"
                         title="Iris"
                         trigger="click">
-                        <p>In greek mythology, Iris was the goddess of rainbow and the messenger of the Gods. <br><br>This webpage aims
-                        to impersonify those attributes. The design I implemented hopes to give off a colourful and friendly look, and the
-                        content I hope would be a good repository of resources that we all could search and find easier</p>
+                        <p>In greek mythology, Iris was the goddess of rainbow and the messenger of the Gods. <br><br>So, with that 2
+                        information in mind, iris (this webpage) will be designed to showcase that rainbow-ness and also such
+                        that it feels open, friendly and just nice to use and browse. <br><br> The content I gathered from the web that I deemed
+                        nice and useful will be hosted here. Got some contents you found cool and nice too? Hit me up!</p>
                         <button id="abt" slot="reference">About</button>
                     </el-popover>
                 </div>
@@ -137,6 +138,7 @@ export default {
     padding: 0;
     text-decoration: none;
     color: inherit;
+    background-color: white;
 }
 .fgrid div button:hover {
     color: #F56C6C;
