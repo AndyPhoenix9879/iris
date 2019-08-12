@@ -315,8 +315,9 @@ export default {
 }
 .CardContent_list {
     display: grid;
-    grid-template-columns: 90px 100%;
-    overflow: hidden;
+    grid-template-columns: 90px auto;
+    white-space: nowrap;
+    overflow: scroll;
 }
 .Card_list a:hover {
     color: #409EFF;
@@ -376,6 +377,17 @@ export default {
     bottom: 0;
     border-radius: 10px;*/
 }
-
+@media screen and (min-height: 1000px) {
+  .mainContainer {
+    min-height: 700px;
+    max-height: 700px;
+  }
+}
+@media screen and (min-height: 1300px) {
+  .mainContainer {
+    min-height: 1000px;
+    max-height: 1000px;
+  }
+}
 </style>
 
