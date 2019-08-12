@@ -75,6 +75,12 @@ export default {
   .mainContainer {
     padding: 0 5% 20px 5%;
   }
+  .searchContainer {
+    width: 98% !important;
+  }
+  .traylist i {
+    margin-left: 10px !important;
+  }
 }
 @media screen and (max-width: 398px) {
   .Card {
@@ -89,6 +95,36 @@ export default {
     font-size: 12px !important;
     height: 37px !important;
     line-height: 37px !important;
+  }
+  .searchContainer {
+    width: 95% !important;
+  }
+  .traylist i {
+    margin-left: 10px !important;
+  }
+}
+@media screen and (max-width: 334px) {
+  #nav {
+    padding: 5px !important;
+  }
+  .Card {
+    height: 110px !important;
+    width: 110px !important;
+  }
+  .TypeBox {
+    font-size: 22px !important;
+    height: 80px !important;
+  }
+  .Title {
+    font-size: 11px !important;
+    height: 32px !important;
+    line-height: 32px !important;
+  }
+  .searchContainer {
+    width: 94% !important;
+  }
+  .traylist i {
+    margin-left: 10px !important;
   }
 }
 </style>
