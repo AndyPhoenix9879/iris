@@ -19,7 +19,7 @@
             </div>
                 
         </div>
-        <hr>
+        <hr style="margin: 5px 0 20px 0;">
         <div class="tray">
             <div class="notFound" v-if="filteredSearch==''">
                 <h1><br><br><br>Nothing... :(</h1>
@@ -164,7 +164,7 @@ export default {
 .searchContainer {
     display: flex;
     height: auto;
-    width: 100%;
+    width: 100%;    
     padding-top: 25px;
     padding-bottom: 15px;
     position: sticky;
@@ -259,15 +259,15 @@ export default {
 .Card {
     border-radius: 10px;
     min-width: 50px;
+    margin-top: 0px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     /*padding: 20px;*/
     padding:0;
     width: 170px;
     height: 170px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
-    
     transition: linear 0.2s;
     position: relative;
     overflow: hidden;
