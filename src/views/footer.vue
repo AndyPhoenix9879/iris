@@ -18,10 +18,11 @@
                         placement="top"
                         title="Iris"
                         trigger="click">
-                        <p>In greek mythology, Iris was the goddess of rainbow and the messenger of the Gods. <br><br>So, with that 2
-                        information in mind, iris (this webpage) will be designed to showcase that rainbow-ness and also such
-                        that it feels open, friendly and just nice to use and browse. <br><br> The content I gathered from the web that I deemed
-                        nice and useful will be hosted here. Got some contents you found cool and nice too? Hit me up!</p>
+                        <p>In greek mythology, Iris was the goddess of rainbow and the messenger of the Gods. <br><br>I hoped to be able
+                        to bring out that rainbow-ness that is true to Iris's title on this webpage, and with a little bit of my own
+                        obsession with using box-shadows in the design process as well lol. <br><br>Resources I found nice and useful from
+                        whatever sources I got them from will be hosted here. This was just an experiment project I thought would
+                        be fun to make - and it was!</p>
                         <button id="abt" slot="reference">About</button>
                     </el-popover>
                 </div>

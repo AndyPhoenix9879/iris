@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "24b82c237923ac112432",
-    "url": "/iris/css/app.b3b5be4f.css"
+    "revision": "0187fbeef91240eb26a3",
+    "url": "/iris/css/app.053994ce.css"
   },
   {
-    "revision": "24b82c237923ac112432",
-    "url": "/iris/js/app.5f52d1ec.js"
+    "revision": "0187fbeef91240eb26a3",
+    "url": "/iris/js/app.5f285e1d.js"
   },
   {
     "revision": "88c73b87f1d653d8fb8d",
@@ -32,16 +32,12 @@ self.__precacheManifest = [
     "url": "/iris/fonts/element-icons.732389de.ttf"
   },
   {
-    "revision": "dd0fdd33026d771c57c522fef6696f90",
+    "revision": "b0d2ca9e793240627a9e1c1dd918dc9e",
     "url": "/iris/index.html"
   },
   {
     "revision": "59d104df5f5fec64d38120a4c9cd109c",
     "url": "/iris/iris.png"
-  },
-  {
-    "revision": "03b8e3d20a07e01afc4b1c863ca87b0d",
-    "url": "/iris/irisICON.png"
   },
   {
     "revision": "b1410bfe070cb9dbaca01bcaf34ce08b",
@@ -50,6 +46,10 @@ self.__precacheManifest = [
   {
     "revision": "487fe69cb9256b25e06ba2d40cf2e98a",
     "url": "/iris/faviconDERPY.png"
+  },
+  {
+    "revision": "03b8e3d20a07e01afc4b1c863ca87b0d",
+    "url": "/iris/irisICON.png"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
