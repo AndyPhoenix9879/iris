@@ -5,14 +5,6 @@
       <div class="navEmblem">
         <a href=""><img src="../public/iris.png"></a>
       </div>
-      <!--
-      <div class="navItem">
-        <router-link to="/">Home</router-link> <el-divider direction="vertical"></el-divider>
-        <router-link to="/about">About</router-link> <el-divider direction="vertical"></el-divider>
-        <router-link to="/portfolio">Portfolio</router-link> <el-divider direction="vertical"></el-divider>
-        <router-link to="/downloads">Downloads</router-link> 
-      </div>
-      -->
     </div>
     
     <router-view/>
@@ -155,12 +147,5 @@ export default {
   transition: linear 0.05s;
   transform: scale(0.8);
 }
-/*.navItem {
-  text-align: right;
-  width: 100%;
-  a {
-    padding: 0 15px 0 15px;
-  }
-}*/
 
 </style>

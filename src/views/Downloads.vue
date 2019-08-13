@@ -363,15 +363,6 @@ export default {
 .Title_list {
     font-size: 14px;
     padding: 5px 10px;
-    /*width: 100%;
-    overflow: hidden;
-    display: inline-block;
-    font-size: 14px;
-    padding: 5px 10px 5px 100px;
-    background-color: white;
-    color: inherit;
-    bottom: 0;
-    border-radius: 10px;*/
 }
 
 @media screen and (min-height: 1000px) {
