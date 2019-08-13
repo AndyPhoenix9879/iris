@@ -24,15 +24,15 @@ self.__precacheManifest = [
     "url": "/iris/js/chunk-vendors.7ee78bfb.js"
   },
   {
-    "revision": "732389ded34cb9c52dd88271f1345af9",
-    "url": "/iris/fonts/element-icons.732389de.ttf"
-  },
-  {
     "revision": "535877f50039c0cb49a6196a5b7517cd",
     "url": "/iris/fonts/element-icons.535877f5.woff"
   },
   {
-    "revision": "1a5fd7b57839f96c0e5217abbbba3b64",
+    "revision": "732389ded34cb9c52dd88271f1345af9",
+    "url": "/iris/fonts/element-icons.732389de.ttf"
+  },
+  {
+    "revision": "ec80e0ec2ae26d1e8298639cb606e4e8",
     "url": "/iris/index.html"
   },
   {
