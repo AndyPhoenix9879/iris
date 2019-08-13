@@ -57,7 +57,7 @@ export default {
     grid-template-columns: 50px 50px 50px 50px;
   }
   .traylist i {
-    margin-top: -3px !important;
+    margin-top: 9px !important;
     margin-left: 15px !important;
   }
 }
