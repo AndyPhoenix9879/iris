@@ -1,4 +1,4 @@
 module.exports = {
-    publicPath: '/iris-web',
+    publicPath: 'iris-web',
     outputDir: 'docs'
     } 

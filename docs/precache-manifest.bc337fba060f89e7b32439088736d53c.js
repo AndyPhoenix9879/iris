@@ -40,16 +40,16 @@ self.__precacheManifest = [
     "url": "/iris-web/iris.png"
   },
   {
-    "revision": "b1410bfe070cb9dbaca01bcaf34ce08b",
-    "url": "/iris-web/faviconDERPY.ico"
-  },
-  {
     "revision": "03b8e3d20a07e01afc4b1c863ca87b0d",
     "url": "/iris-web/irisICON.png"
   },
   {
     "revision": "487fe69cb9256b25e06ba2d40cf2e98a",
     "url": "/iris-web/faviconDERPY.png"
+  },
+  {
+    "revision": "b1410bfe070cb9dbaca01bcaf34ce08b",
+    "url": "/iris-web/faviconDERPY.ico"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
