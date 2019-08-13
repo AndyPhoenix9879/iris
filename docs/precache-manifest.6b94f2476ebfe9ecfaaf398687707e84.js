@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/AndyPhoenix9879.github.io/js/chunk-vendors.3febe91d.js"
   },
   {
-    "revision": "535877f50039c0cb49a6196a5b7517cd",
-    "url": "/AndyPhoenix9879.github.io/fonts/element-icons.535877f5.woff"
-  },
-  {
     "revision": "732389ded34cb9c52dd88271f1345af9",
     "url": "/AndyPhoenix9879.github.io/fonts/element-icons.732389de.ttf"
+  },
+  {
+    "revision": "535877f50039c0cb49a6196a5b7517cd",
+    "url": "/AndyPhoenix9879.github.io/fonts/element-icons.535877f5.woff"
   },
   {
     "revision": "cd289311222bcd0a7dea9eeb6903b98d",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/AndyPhoenix9879.github.io/iris.png"
   },
   {
-    "revision": "487fe69cb9256b25e06ba2d40cf2e98a",
-    "url": "/AndyPhoenix9879.github.io/faviconDERPY.png"
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/AndyPhoenix9879.github.io/robots.txt"
   },
   {
     "revision": "03b8e3d20a07e01afc4b1c863ca87b0d",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/AndyPhoenix9879.github.io/faviconDERPY.ico"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/AndyPhoenix9879.github.io/robots.txt"
+    "revision": "487fe69cb9256b25e06ba2d40cf2e98a",
+    "url": "/AndyPhoenix9879.github.io/faviconDERPY.png"
   }
 ];
