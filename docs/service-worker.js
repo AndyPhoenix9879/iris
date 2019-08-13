@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/iris-web/precache-manifest.bc337fba060f89e7b32439088736d53c.js"
+  "/iris/precache-manifest.c07e050d802bf46b825d33e050ea9879.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "client-v391"});
