@@ -182,25 +182,6 @@ export default {
     padding-top: 40px;
     padding-bottom: 25px;
 }
-#add {
-    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.15);
-    outline: none;
-    margin: 20px;
-    padding: 15px;
-    font-size: 20px;
-}
-#add:active {
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.35);
-}
-#min {
-    outline: none;
-    font-size: 5px;
-    padding: 5px;
-    float: right;
-}
-#blk {
-    text-align: center;
-}
 .tray {
     text-align: center;
     display: flex;
