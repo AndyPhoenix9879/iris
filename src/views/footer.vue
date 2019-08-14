@@ -77,14 +77,7 @@
 </template>
 <script>
 export default {
-    name: 'webfooter',
-    data() {
-        return {
-        }
-    },
-    methods: {
-        
-    }
+    name: 'webfooter'
 }
 </script>
 <style scoped>
