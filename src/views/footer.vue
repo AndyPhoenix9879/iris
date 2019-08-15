@@ -2,10 +2,10 @@
     <div class="footer">
 
             <div class="fIcon">
-                <a target="_blank" href="https://www.linkedin.com/in/laijianshin9879/"><img src="../assets/Circle Color/Linkedin.png"></a> 
-                <a target="_blank" href="https://github.com/AndyPhoenix9879"><img src="../assets/Circle Color/Github.png"></a> 
-                <a target="_blank" href="https://www.facebook.com/andy.lai.9879"><img src="../assets/Circle Color/Facebook.png"></a> 
-                <a target="_blank" href="https://www.instagram.com/lai9879/"><img src="../assets/Circle Color/Instagram.png"></a> 
+                <a target="_blank" href="https://www.linkedin.com/in/laijianshin9879/" rel="noreferrer"><img src="../assets/Circle Color/Linkedin.png"></a> 
+                <a target="_blank" href="https://github.com/AndyPhoenix9879" rel="noreferrer"><img src="../assets/Circle Color/Github.png"></a> 
+                <a target="_blank" href="https://www.facebook.com/andy.lai.9879" rel="noreferrer"><img src="../assets/Circle Color/Facebook.png"></a> 
+                <a target="_blank" href="https://www.instagram.com/lai9879/" rel="noreferrer"><img src="../assets/Circle Color/Instagram.png"></a> 
             </div>
             <div class="fgrid">
                 
@@ -35,7 +35,7 @@
                 </div>
 
                 <div>
-                    <a target="_blank" href="https://github.com/AndyPhoenix9879/web_Project">Source code</a>
+                    <a target="_blank" href="https://github.com/AndyPhoenix9879/web_Project" rel="noreferrer">Source code</a>
                 </div>
 
                 <div>

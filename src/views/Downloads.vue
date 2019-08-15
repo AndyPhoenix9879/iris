@@ -31,7 +31,7 @@
                 
                 <div class="CardContent">
 
-                    <a :href=value.url style="outline:none;" target="_blank">
+                    <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
                         <div class="TypeBox" v-if="value.type==='pic'">
                             <img :src="value.url">
                         </div>
@@ -52,7 +52,7 @@
             <span v-else class="tray_list">
                 <div class="Card_list" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
                 <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>--> 
-                <a :href=value.url style="outline:none;" target="_blank">
+                <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
                     <div class="CardContent_list">
 
                         
