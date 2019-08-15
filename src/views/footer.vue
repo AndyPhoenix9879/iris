@@ -1,10 +1,6 @@
 <template>
     <div class="footer">
 
-        <div class="fir">
-        </div>
-
-        <div class="sec">
             <div class="fIcon">
                 <a target="_blank" href="https://www.linkedin.com/in/laijianshin9879/"><img src="../assets/Circle Color/Linkedin.png"></a> 
                 <a target="_blank" href="https://github.com/AndyPhoenix9879"><img src="../assets/Circle Color/Github.png"></a> 
@@ -68,12 +64,8 @@
                 <span style="color: #FFCB2B; font-weight: bolder;">Firebase</span>
             </div>
         </div>
-
-        <div class="thir">
-        </div>
         <!-- <img src="../../public/iris.png" style="height: 30px; margin-top: -2.5px; margin-left: -7px;"> was developed as a centralized web page for me to share my resources in a prettier way :) <br>
         -->
-    </div>
 </template>
 <script>
 export default {
@@ -91,8 +83,6 @@ export default {
   color: #606266;
   width:100%;
   position: sticky;
-  display: grid;
-  grid-template-columns: 35% 30% 35%;
 }
 .footer .fIcon {
     transform: scale(1.2);
@@ -146,27 +136,11 @@ export default {
     padding-top: 60px;
 }
 @media screen and (max-width: 970px) {
-  .footer {
-      grid-template-columns: 20% 60% 20%;
-  }
   .fgrid {
     grid-template-columns: 100px 100px 100px 100px;
   }
 }
-@media screen and (max-width: 585px) {
-  .footer {
-      grid-template-columns: 15% 70% 15%;
-  }
-}
-@media screen and (max-width: 488px) {
-  .footer {
-      grid-template-columns: 10% 80% 10%;
-  }
-}
 @media screen and (max-width: 420px) {
-  .footer {
-      grid-template-columns: 10% 80% 10%;
-  }
   .fgrid {
       grid-template-columns: 75px 75px 75px 75px;
   }
