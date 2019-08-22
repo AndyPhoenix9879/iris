@@ -52,20 +52,20 @@
             <span v-else class="tray_list">
                 <div class="Card_list" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
                 <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>--> 
-                <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
+                
                     <div class="CardContent_list">
-
-                        
+                        <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
                             <div class="TypeBox_list">
                                 {{value.type.toUpperCase()}}
                             </div>
+                        </a>
+                        <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
                             <div class="Title_list">
                                 {{value.name}}
                             </div>
-                        
-
+                        </a>  
                     </div>
-                </a>    
+                  
                     
                 </div>
             </span>
