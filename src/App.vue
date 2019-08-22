@@ -19,11 +19,6 @@ export default {
 </script>
 
 <style>
-* {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale !important;
-}
 .el-popover {
   max-width: 450px !important;
   word-break: normal !important;
@@ -129,6 +124,9 @@ export default {
 <style lang="scss" scoped>
 #app {
   color: #2c3e50;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 #nav {
   padding: 10px;
