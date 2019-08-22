@@ -90,6 +90,9 @@ export default {
     margin-bottom: 20px;
 }
 .fIcon {
+    width: 180px;
+    text-align: center;
+    margin: auto;
     padding-bottom: 30px;
 }
 .fIcon a {
