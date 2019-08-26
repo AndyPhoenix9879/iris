@@ -222,7 +222,7 @@ export default {
 .traylist i {
     font-size: 30px;
     padding: 0;
-    margin-top: 12px;
+    margin-top: 10px;
     margin-left: 38px;
     outline:none;
     border:none; 
@@ -248,7 +248,7 @@ export default {
     padding:0;
     width: 170px;
     height: 170px;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px 0 rgba(186,188,217, 0.5);
     transition: linear 0.2s;
     position: relative;
     overflow: hidden;
@@ -258,7 +258,6 @@ export default {
     /*padding: 20px;*/
     border: 1px solid #F2F6FC;
     border-bottom: none;
-    padding: 5px;
     width: 100%;
     transition: linear 0.35s;
     text-align: left;
@@ -268,11 +267,11 @@ export default {
     color: inherit;
 }
 .Card:hover {
-    box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.2);
-    transition: linear 0.25s;
+    box-shadow: 0 0px 15px 0 rgba(186,188,217, 0.55);
+    transition: linear 0.32s;
 }
 .Card:active {
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 2px 0 rgba(186,188,217, 0.5);
     transition: linear 0.08s;
 }
 .Card_list:hover {
@@ -327,7 +326,7 @@ export default {
     color: #DCDFE6;*/
     color: #DCDFE6;
     font-weight: bolder;
-    padding: 3px 5px;
+    margin: 8px 10px;
 }
 .Title {
     overflow: hidden;
@@ -343,7 +342,7 @@ export default {
 }
 .Title_list {
     font-size: 14px;
-    padding: 5px 10px;
+    margin: 8px 10px;
 }
 
 @media screen and (min-height: 1000px) {
