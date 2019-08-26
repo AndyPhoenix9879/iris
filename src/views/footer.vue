@@ -50,7 +50,6 @@
                             PDF = PDF<br>
                             TOR = Torrent file<br>
                             DOCX = MS Word file<br>
-                            PIC = Picture, usually JPG
                         </p>
                         <button id="legend" slot="reference">Legend</button>
                     </el-popover>
