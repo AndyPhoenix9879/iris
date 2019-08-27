@@ -8,12 +8,12 @@
             <input v-model="search" placeholder="Search" class="traySearch">
 
             <div class="traylist" v-if="viewType==true">
-                <el-tooltip class="item" effect="dark" content="List view" placement="bottom-start" open-delay="450" hide-after="1650">
+                <el-tooltip class="item" effect="dark" content="List view" placement="bottom-start" open-delay=450 hide-after=1650>
                     <i class="el-icon-notebook-2" @click="viewClick()"></i>
                 </el-tooltip>
             </div>
             <div class="traylist" v-else>
-                <el-tooltip class="item" effect="dark" content="Block view" placement="bottom-start" open-delay="450" hide-after="1650">
+                <el-tooltip class="item" effect="dark" content="Block view" placement="bottom-start" open-delay=450 hide-after=1650>
                     <i class="el-icon-menu" @click="viewClick()"></i>
                 </el-tooltip>
             </div>
@@ -39,7 +39,23 @@
                             {{value.type.toUpperCase()}}
                         </div>
                     
-                        <div class="Title">
+                        <div class="Title" id="red" v-if="value.type.toLowerCase()==='pdf'">
+                            {{value.name}}
+                        </div>
+
+                        <div class="Title" id="green" v-if="value.type.toLowerCase()==='gdrive'">
+                            {{value.name}}
+                        </div>
+
+                        <div class="Title" id="green" v-if="value.type.toLowerCase()==='docx'">
+                            {{value.name}}
+                        </div>
+
+                        <div class="Title" id="blue" v-if="value.type.toLowerCase()==='web'">
+                            {{value.name}}
+                        </div>
+
+                        <div class="Title" id="yellow" v-if="value.type.toLowerCase()==='tor'">
                             {{value.name}}
                         </div>
                     </a>
@@ -155,6 +171,18 @@ export default {
 }
 </script>
 <style scoped>
+#red {
+    background-color: #F56C6C;
+}
+#green {
+    background-color: #67C23A;
+}
+#blue {
+    background-color: #409EFF;
+}
+#yellow {
+    background-color: #FFCB2B;
+}
 .mainContainer {
     min-height: 630px;
     max-height: 630px;
@@ -332,8 +360,8 @@ export default {
     overflow: hidden;
     font-size: 14px;
     padding: 0 10px 0 10px;
-    background-color: #409EFF;
     color: white;
+    background-color: #67C23A;
     height: 45px;
     line-height: 45px;
     width: 100%;
