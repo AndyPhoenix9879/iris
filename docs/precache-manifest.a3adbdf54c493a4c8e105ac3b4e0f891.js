@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "38b7a0505bcb6f0c2e01",
+    "revision": "66cf3f919c9ce1cc15b1",
     "url": "/iris/css/app.9224b67f.css"
   },
   {
-    "revision": "38b7a0505bcb6f0c2e01",
-    "url": "/iris/js/app.8e358c78.js"
+    "revision": "66cf3f919c9ce1cc15b1",
+    "url": "/iris/js/app.8875fff5.js"
   },
   {
-    "revision": "2e2a1013cccc943099df",
-    "url": "/iris/css/chunk-ac9456aa.a5cf50db.css"
+    "revision": "557cf34793339f6ec86c",
+    "url": "/iris/css/chunk-63824260.0b9abf5b.css"
   },
   {
-    "revision": "2e2a1013cccc943099df",
-    "url": "/iris/js/chunk-ac9456aa.06e9e6a7.js"
+    "revision": "557cf34793339f6ec86c",
+    "url": "/iris/js/chunk-63824260.984ec3de.js"
   },
   {
     "revision": "045ca6b5efece8c9a9a5",
@@ -24,15 +24,15 @@ self.__precacheManifest = [
     "url": "/iris/js/chunk-vendors.7ee78bfb.js"
   },
   {
-    "revision": "732389ded34cb9c52dd88271f1345af9",
-    "url": "/iris/fonts/element-icons.732389de.ttf"
-  },
-  {
     "revision": "535877f50039c0cb49a6196a5b7517cd",
     "url": "/iris/fonts/element-icons.535877f5.woff"
   },
   {
-    "revision": "4425c68dee344d07dd6ce6cd3e35b88b",
+    "revision": "732389ded34cb9c52dd88271f1345af9",
+    "url": "/iris/fonts/element-icons.732389de.ttf"
+  },
+  {
+    "revision": "60b4b94a4ec6940a56374dc1527c861d",
     "url": "/iris/index.html"
   },
   {
