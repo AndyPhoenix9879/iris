@@ -43,19 +43,15 @@
                             {{value.name}}
                         </div>
 
-                        <div class="Title" id="green" v-if="value.type.toLowerCase()==='gdrive'">
+                        <div class="Title" id="blue" v-else-if="value.type.toLowerCase()==='web'">
                             {{value.name}}
                         </div>
 
-                        <div class="Title" id="green" v-if="value.type.toLowerCase()==='docx'">
+                        <div class="Title" id="yellow" v-else-if="value.type.toLowerCase()==='tor'">
                             {{value.name}}
                         </div>
 
-                        <div class="Title" id="blue" v-if="value.type.toLowerCase()==='web'">
-                            {{value.name}}
-                        </div>
-
-                        <div class="Title" id="yellow" v-if="value.type.toLowerCase()==='tor'">
+                        <div class="Title" v-else>
                             {{value.name}}
                         </div>
                     </a>
