@@ -1,4 +1,5 @@
-# Lai's Webpage
+# iris
+A webpage that will act as my main resource hosting and sharing platform in a more colourful way!
 
 ## Project setup
 ```
