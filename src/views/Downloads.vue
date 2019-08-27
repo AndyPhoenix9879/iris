@@ -33,7 +33,7 @@
 
                     <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
                         <div class="TypeBox" v-if="value.type==='pic'">
-                            <img :src="value.url">
+                            <img :src="value.url" alt="a pic should be here">
                         </div>
                         <div class="TypeBox" v-else>
                             {{value.type.toUpperCase()}}
@@ -291,7 +291,7 @@ export default {
     color: inherit;
 }
 .Card:hover {
-    box-shadow: 0 0px 15px 0 rgba(186,188,217, 0.55);
+    box-shadow: 0 0px 15px 0 rgba(186,188,217, 0.70);
     transition: linear 0.32s;
 }
 .Card:active {
