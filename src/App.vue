@@ -3,7 +3,7 @@
     <div id="nav" style="z-index: 9999;">
 
       <div class="navEmblem">
-        <a href=""><img src="../public/iris.png"></a>
+        <a href=""><img alt="iris logo" src="../public/iris.png"></a>
       </div>
     </div>
     
