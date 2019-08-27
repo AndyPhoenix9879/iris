@@ -5,7 +5,7 @@
 
         <div class="searchContainer">
             <i class="el-icon-search"></i>
-            <input v-model="search" placeholder="Search" class="traySearch">
+            <label for="search bar"></label><input v-model="search" placeholder="Search" class="traySearch" type="text" name="search bar">
 
             <div class="traylist" v-if="viewType==true">
                 <el-tooltip class="item" effect="dark" content="List view" placement="bottom-start" open-delay=450 hide-after=1650>
@@ -33,7 +33,7 @@
 
                     <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
                         <div class="TypeBox" v-if="value.type==='pic'">
-                            <img :src="value.url" alt="a pic should be here">
+                            <img alt="a pic should be here" :src="value.url">
                         </div>
                         <div class="TypeBox" v-else>
                             {{value.type.toUpperCase()}}
