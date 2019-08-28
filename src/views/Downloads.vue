@@ -292,7 +292,7 @@ export default {
     color: inherit;
 }
 .Card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 5px 11px 0 rgba(186,188,217, 0.85);
     transition: linear 0.32s;
 }
