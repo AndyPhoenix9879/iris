@@ -280,10 +280,11 @@ export default {
 .Card_list {
     border-radius: 0;
     /*padding: 20px;*/
+    background-color: white;
     border: 1px solid #F2F6FC;
     border-bottom: none;
     width: 100%;
-    transition: linear 0.35s;
+    transition: linear 0.20s;
     text-align: left;
 }
 .Card_list a {
@@ -300,11 +301,14 @@ export default {
     transition: linear 0.08s;
 }
 .Card_list:hover {
-    box-shadow: 0 3px 12px -8px rgba(0, 0, 0, 0.6);
-    transition: linear 0.15s;
+    z-index: 999;
+    transform: scale(1.03);
+    box-shadow: 0 1px 5px 0 rgba(186,188,217, 0.17);
+    transition: linear 0.20s;
 }
 .Card_list:active {
-    box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.12);
+    transform: scale(1);
+    box-shadow: 0 0 0px 0 rgba(186,188,217, 0.12);
     transition: linear 0.08s;
 }
 .CardContent a {
