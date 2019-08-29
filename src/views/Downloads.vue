@@ -284,7 +284,7 @@ export default {
     border: 1px solid #F2F6FC;
     border-bottom: none;
     width: 100%;
-    transition: box-shadow .2s ease-in-out, transform .2s ease-in-out;
+    transition: box-shadow .22s ease-in-out, transform .22s ease-in-out;
     text-align: left;
 }
 .Card_list a {
@@ -303,8 +303,8 @@ export default {
 .Card_list:hover {
     z-index: 999;
     transform: scale(1.03);
-    box-shadow: 0 1px 5px 0 rgba(186,188,217, 0.17);
-    transition: box-shadow .2s ease-in-out, transform .2s ease-in-out;
+    box-shadow: 0 0.5px 1px 0 rgba(186, 188, 217, 0.5), 0 1px 6px 0 rgba(186,188,217, 0.17);
+    transition: box-shadow .22s ease-in-out, transform .22s ease-in-out;
 }
 .Card_list:active {
     transform: scale(1);
