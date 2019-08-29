@@ -273,7 +273,7 @@ export default {
     width: 170px;
     height: 170px;
     box-shadow: 0 1px 5px 0 rgba(186,188,217, 0.5);
-    transition: linear 0.2s;
+    transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
     position: relative;
     overflow: hidden;
 }
@@ -284,7 +284,7 @@ export default {
     border: 1px solid #F2F6FC;
     border-bottom: none;
     width: 100%;
-    transition: linear 0.20s;
+    transition: box-shadow .2s ease-in-out, transform .2s ease-in-out;
     text-align: left;
 }
 .Card_list a {
@@ -292,9 +292,9 @@ export default {
     color: inherit;
 }
 .Card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 11px 0 rgba(186,188,217, 0.85);
-    transition: linear 0.32s;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px 0 rgba(186,188,217, 0.45), 0 6px 6px 0 rgba(186,188,217, 0.55);
+    transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
 }
 .Card:active {
     box-shadow: 0 0 2px 0 rgba(186,188,217, 0.5);
@@ -304,7 +304,7 @@ export default {
     z-index: 999;
     transform: scale(1.03);
     box-shadow: 0 1px 5px 0 rgba(186,188,217, 0.17);
-    transition: linear 0.20s;
+    transition: box-shadow .2s ease-in-out, transform .2s ease-in-out;
 }
 .Card_list:active {
     transform: scale(1);
