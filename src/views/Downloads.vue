@@ -296,7 +296,7 @@ export default {
 }
 .Card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px 0 rgba(186,188,217, 0.45), 0 6px 6px 0 rgba(186,188,217, 0.55);
+    box-shadow: 0 10px 20px 0 rgba(186,188,217, 0.45), 0 6px 6px 0 rgba(186,188,217, 1);
     transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
 }
 
