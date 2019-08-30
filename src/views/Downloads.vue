@@ -296,9 +296,11 @@ export default {
     box-shadow: 0 10px 20px 0 rgba(186,188,217, 0.45), 0 6px 6px 0 rgba(186,188,217, 0.55);
     transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
 }
+
 .Card:active {
+    transform: translateY(0);
     box-shadow: 0 0 2px 0 rgba(186,188,217, 0.5);
-    transition: linear 0.08s;
+    transition: ease-in-out 0.13s;
 }
 .Card_list:hover {
     z-index: 999;
