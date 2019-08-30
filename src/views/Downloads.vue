@@ -67,11 +67,27 @@
                 
                     <div class="CardContent_list">
                         <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
-                            <div class="TypeBox_list">
+                            
+                            <div class="TypeBox_list" id="lred" v-if="value.type.toLowerCase()==='pdf'">
                                 {{value.type.toUpperCase()}}
                             </div>
+
+                            <div class="TypeBox_list" id="lblue" v-else-if="value.type.toLowerCase()==='web'">
+                                {{value.type.toUpperCase()}}
+                            </div>
+
+                            <div class="TypeBox_list" id="lyellow" v-else-if="value.type.toLowerCase()==='tor'">
+                                {{value.type.toUpperCase()}}
+                            </div>
+
+                            <div class="TypeBox_list" v-else>
+                                {{value.type.toUpperCase()}}
+                            </div>
+
                         </a>
                         <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
+                            
+
                             <div class="Title_list">
                                 {{value.name}}
                             </div>
@@ -375,6 +391,7 @@ export default {
     font-size: 14px;
     margin: 8px 10px;
 }
+
 
 @media screen and (min-height: 1000px) {
   .mainContainer {
