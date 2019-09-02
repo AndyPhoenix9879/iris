@@ -68,7 +68,16 @@
                     <div class="CardContent_list">
                         <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
                             
-                            <div class="TypeBox_list">
+                            <div class="TypeBox_list" id="redt" v-if="value.type.toLowerCase()==='pdf'">
+                                {{value.type.toUpperCase()}}
+                            </div>
+                            <div class="TypeBox_list" id="bluet" v-else-if="value.type.toLowerCase()==='web'">
+                                {{value.type.toUpperCase()}}
+                            </div>
+                            <div class="TypeBox_list" id="yellowt" v-else-if="value.type.toLowerCase()==='tor'">
+                                {{value.type.toUpperCase()}}
+                            </div>
+                            <div class="TypeBox_list" v-else>
                                 {{value.type.toUpperCase()}}
                             </div>
 
@@ -172,9 +181,6 @@ export default {
 <style scoped>
 #red {
     background-color: #F56C6C;
-}
-#green {
-    background-color: #67C23A;
 }
 #blue {
     background-color: #409EFF;
@@ -311,6 +317,21 @@ export default {
     box-shadow: 0 0.5px 1px 0 rgba(186, 188, 217, 0.5), 0 1px 6px 0 rgba(186,188,217, 0.17);
     transition: box-shadow .22s ease-in-out, transform .22s ease-in-out;
 }
+.Card_list:hover .Title_list {
+    color: #409EFF;
+}
+.Card_list:hover .TypeBox_list {
+    color: #67C23A;
+}
+.Card_list:hover .TypeBox_list#bluet{
+    color: #409EFF;
+}
+.Card_list:hover .TypeBox_list#redt{
+    color: #F56C6C;
+}
+.Card_list:hover .TypeBox_list#yellowt{
+    color: #FFCB2B;
+}
 .Card_list:active {
     transform: scale(1);
     box-shadow: 0 0 0px 0 rgba(186,188,217, 0.12);
@@ -358,9 +379,10 @@ export default {
     display: inline-block;
     font-weight: bolder;
     color: #DCDFE6;*/
+    font-size: 14px;
     color: #DCDFE6;
     font-weight: bolder;
-    margin: 8px 10px;
+    margin: 8px 12px;
 }
 .Title {
     overflow: hidden;
