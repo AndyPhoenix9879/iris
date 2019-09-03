@@ -382,7 +382,7 @@ export default {
     font-size: 14px;
     color: #DCDFE6;
     font-weight: bolder;
-    margin: 8px 12px;
+    margin: 10px 12px;
 }
 .Title {
     overflow: hidden;
@@ -398,7 +398,7 @@ export default {
 }
 .Title_list {
     font-size: 14px;
-    margin: 8px 10px;
+    margin: 10px 10px;
 }
 
 
