@@ -191,7 +191,7 @@ export default {
 .mainContainer {
     min-height: 630px;
     max-height: 630px;
-    overflow: scroll;
+    overflow: auto;
     position:relative;
 }
 .searchContainer {
@@ -348,7 +348,7 @@ export default {
     display: grid;
     grid-template-columns: 90px auto;
     white-space: nowrap;
-    overflow: scroll;
+    overflow: auto;
 }
 .Card_list a:hover {
     color: #409EFF;
