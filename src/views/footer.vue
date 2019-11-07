@@ -14,11 +14,12 @@
                         placement="top"
                         title="Iris"
                         trigger="click">
-                        <p>In greek mythology, Iris was the goddess of rainbow and the messenger of the Gods. <br><br>I hoped to be able
-                        to bring out that rainbow-ness that is true to Iris's title on this webpage, and with a little bit of my own
-                        obsession with using box-shadows in the design process as well lol. <br><br>Resources I found nice and useful from
-                        whatever sources I got them from will be hosted here. This was just an experiment project I thought would
-                        be fun to make - and it was!</p>
+                        <p>In greek mythology, Iris was the Goddess of rainbow and the messenger of the Gods. <br><br>The colour scheme and design approach
+                        I went with was in hoping to stay true to the Goddess' title of Goddess of rainbow. The design is also inspired
+                        from Google's material approach, albeit very toned down as one can see the webpage is designed very minimally.  <br><br>
+                        Resources I found nice and useful from whatever sources I got them from will be hosted here (which stays true to Iris' other title -
+                        being a messenger to the Gods). <br><br>Iris was an experimental web project I decided to partake in to learn and play with the multitude of
+                        features found in a framework - and especially in vueJS. Thanks for visiting it!</p>
                         <button id="abt" slot="reference">About</button>
                     </el-popover>
                 </div>
