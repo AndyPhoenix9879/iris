@@ -26,40 +26,39 @@
             </div>
         </div>
             <span v-if="viewType==true" class="tray">
-            <div class="Card" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
-                <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>--> 
-                
-                <div class="CardContent">
-
-                    <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
-                        <div class="TypeBox" v-if="value.type==='pic'">
-                            <img alt="a pic should be here" :src="value.url">
-                        </div>
-                        <div class="TypeBox" v-else>
-                            {{value.type.toUpperCase()}}
-                        </div>
+                <div class="Card" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
+                    <!--<el-button type="danger" circle icon="el-icon-minus" id="min" @click="remove(index)"></el-button>--> 
                     
-                        <div class="Title" id="red" v-if="value.type.toLowerCase()==='pdf'">
-                            {{value.name}}
-                        </div>
+                    <div class="CardContent">
 
-                        <div class="Title" id="blue" v-else-if="value.type.toLowerCase()==='web'">
-                            {{value.name}}
-                        </div>
+                        <a :href=value.url style="outline:none;" target="_blank" rel="noreferrer">
+                            <div class="TypeBox" v-if="value.type==='pic'">
+                                <img alt="a pic should be here" :src="value.url">
+                            </div>
+                            <div class="TypeBox" v-else>
+                                {{value.type.toUpperCase()}}
+                            </div>
+                        
+                            <div class="Title" id="red" v-if="value.type.toLowerCase()==='pdf'">
+                                {{value.name}}
+                            </div>
 
-                        <div class="Title" id="yellow" v-else-if="value.type.toLowerCase()==='tor'">
-                            {{value.name}}
-                        </div>
+                            <div class="Title" id="blue" v-else-if="value.type.toLowerCase()==='web'">
+                                {{value.name}}
+                            </div>
 
-                        <div class="Title" v-else>
-                            {{value.name}}
-                        </div>
-                    </a>
+                            <div class="Title" id="yellow" v-else-if="value.type.toLowerCase()==='tor'">
+                                {{value.name}}
+                            </div>
 
+                            <div class="Title" v-else>
+                                {{value.name}}
+                            </div>
+                        </a>
+
+                    </div>
+                    
                 </div>
-                
-                
-            </div>
             </span>
             <span v-else class="tray_list">
                 <div class="Card_list" v-for="(value, index) in filteredSearch" v-bind:key="value.index">
@@ -141,6 +140,7 @@ export default {
     },
     created() { //when webpage loads, not under method btw
         db.collection('Names').onSnapshot(res => { //snapshot is just a preview or something of the stuff inside the collection
+        console.log("Hello");
             const gotChange = res.docChanges(); //when something changes
             gotChange.forEach(change => { //for each of the changes (with the variable or something as change)
                 if (change.type === 'added'){
@@ -312,7 +312,7 @@ export default {
     transition: ease-in-out 0.13s;
 }
 .Card_list:hover {
-    z-index: 999;
+    z-index: 0;
     transform: scale(1.03);
     box-shadow: 0 0.5px 1px 0 rgba(186, 188, 217, 0.5), 0 1px 6px 0 rgba(186,188,217, 0.17);
     transition: box-shadow .22s ease-in-out, transform .22s ease-in-out;

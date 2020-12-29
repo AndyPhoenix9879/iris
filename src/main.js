@@ -21,7 +21,7 @@ window.$ = window.jQuery = jQuery;
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "",
+  apiKey: "AIzaSyC5SY34WAIbttEAYuSjSglOHdO3SivR5Uw",
   authDomain: "project-1-f0278.firebaseapp.com",
   databaseURL: "https://project-1-f0278.firebaseio.com",
   projectId: "project-1-f0278",
